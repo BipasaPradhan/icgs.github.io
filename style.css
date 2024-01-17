@@ -28,6 +28,13 @@
     text-align: center;
 }
 
+.mainBox {
+    position: absolute;
+    top: 10%;
+    bottom: 0%;
+    width: 100%;
+}
+
 body {
     background-color: #DDE6DC;
     margin:0px;
