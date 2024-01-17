@@ -28,11 +28,6 @@
     text-align: center;
 }
 
-.centerText {
-    position: absolute;
-    transform: translate(25%, -65%);
-}
-
 body {
     background-color: #DDE6DC;
     margin:0px;
