@@ -1,0 +1,43 @@
+body{
+    margin: 0
+}
+.titleBox {
+    background-color:  #747F71;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
+    font-style: normal;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    }
+  .titleBox p {
+    color: white;
+    margin: 0;
+  }
+  .pageBox {
+    background-color: #0D0F08;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    font-style: normal;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    }
+    .mainBox {
+        background-image: url("tree.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 1000px;
+        }
+
+  
