@@ -1,12 +1,8 @@
 .titleBox {
     background-color: #747F71; 
-    padding: 6px; 
-    margin: 0; 
     position: absolute; 
-    top: 0; 
-    bottom: 97%; 
-    left: 0; 
-    right: 0%;
+    height: 28px;
+    width: 100vw;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
@@ -19,24 +15,23 @@
     background-color: #0D0F08;
     margin: 0px;
     position: absolute;
-    top: 3%;
-    bottom: 90%;
-    width: 100%;
+    top: 28px;
+    height: 110px;
+    width: 100vw;
     font-family: "Purple Purse";
     font-style: normal;
     font-weight: 50;
-    font-size: 40px;
+    font-size: 56px;
     text-align: center;
 }
 
 .mainBox {
     position: absolute;
     top: 10%;
-    bottom: 0%;
-    width: 100%;
+    width: 100vw;
 }
 
 body {
-    background-color: #DDE6DC;
+    background-color: #4F543D;
     margin:0px;
 }
