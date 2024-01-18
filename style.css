@@ -1,4 +1,11 @@
-.titleBox {
+html, body {
+    background-color: #4F543D;
+    margin:0px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#titleBox {
     background-color: #747F71; 
     position: absolute; 
     height: 28px;
@@ -11,9 +18,8 @@
 }
 
 
-.pageBox { 
+#pageBox { 
     background-color: #0D0F08;
-    margin: 0px;
     position: absolute;
     top: 28px;
     height: 110px;
@@ -22,16 +28,21 @@
     font-style: normal;
     font-weight: 50;
     font-size: 56px;
-    text-align: center;
 }
 
-.mainBox {
+#mainBox {
     position: absolute;
-    top: 10%;
+    display: grid;
+    place-items: center;
+    top: 138px;
     width: 100vw;
+    /* border: 2px solid pink; */
+    align-items: center;
+    justify-content: center;
 }
 
-body {
-    background-color: #4F543D;
-    margin:0px;
+#map {
+    /* border: 2px solid green; */
+    height:auto;
+    width: 40vw;
 }
