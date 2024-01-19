@@ -22,35 +22,58 @@ html, body{
     margin: 0;
     white-space: nowrap;
   }
-.pageBox {
+.navBar {
   background-color: #0D0F08;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  height: 80px;
-  font-style: normal;
-  font-family: "Yeseva One";
-  font-weight: 400;
-  font-size: 52px;
-  text-align: left;
-  }
-.pageBox p {
+}
+.navBar ul {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  list-style: none;
+}
+.navBar a {
   color: white;
-  margin: 0;
-  padding-left: 20px;
-  white-space: nowrap;
-  }
-.pageBox p1 {
-  color: orange;
-  margin: 0;
-  padding-left: 20px;
-  white-space: nowrap;
-  font-style: normal;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
   font-family: "Thasadith";
-  font-weight: 400;
-  font-size: 20px;
-  transform: translateX(505%)
-  }
+  font-size: 16px;
+}
+.navBar a:hover{
+ background-color: #2D351D;
+}
+.donateButton {
+  background-color:#CFD9CE;
+  color: black;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Thasadith";
+  font-size: 16px; 
+  margin-right: 29px;
+  margin-left: 15px;
+}
+
+.navBar button:hover{
+  background-color: white;
+}
+.navText {
+  color: white;
+  font-family: "Yeseva One";
+  font-size: 45px;
+  margin-left: 29px;
+  white-space: nowrap;
+}
+
 .mainBox {
   background-image: url("images/tree.jpg");
   background-repeat: no-repeat;
@@ -61,26 +84,3 @@ html, body{
   justify-content: center;
   height: 1000px;
   }
-.donateBox {
-  background-color: #CFD9CE;
-  padding: 10px;
-  margin: 35px;
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 15px;
-  font-style: normal;
-  font-family: "Thasadith";
-  font-weight: 400;
-  font-size: 20px;
-  }
-  .donateBox p {
-    color: black;
-    text-align: center;
-    vertical-align: center;
-    transform: translateX(-13%)
-  }
-
-  
