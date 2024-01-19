@@ -12,9 +12,9 @@ html, body {
     justify-content: center;
     height: 28px;
     font-style: normal;
-    font-family: "Montserrat";
+    font-family: "Josefin Sans";
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
     border: 2px solid orange;
 }
@@ -43,6 +43,7 @@ html, body {
     color: white;
     margin: 10px;
     padding-left: 20px;
+    border: 2px solid orange;
 }
 
 #mainBox {
@@ -54,10 +55,24 @@ html, body {
     /* border: 2px solid pink; */
     align-items: center;
     justify-content: center;
+    border: 2px solid orange;
 }
 
 #map {
     /* border: 2px solid green; */
-    height:auto;
-    width: 40vw;
+    height: 960px;
+    width: 540px;
+    border: 2px solid red;
+}
+
+#map img {
+    opacity: 1;
+    height: 100%;
+    width: 540px;
+    border: 2px solid yellow;
+    position: absolute;
+}
+
+#map img:hover {
+    opacity: 0.7;
 }
