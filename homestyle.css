@@ -30,7 +30,7 @@ body{
     text-align: center;
     }
     .mainBox {
-        background-image: url("tree.jpg");
+        background-image: url("images/tree.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
