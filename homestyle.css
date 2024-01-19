@@ -11,15 +11,15 @@ body{
     justify-content: center;
     height: 28px;
     font-style: normal;
-    font-family: "Montserrat";
+    font-family: "Josefin Sans";
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
-    border: 2px solid orange;
     }
-  .titleBox p {
+.titleBox p {
     color: white;
     margin: 0;
+    white-space: nowrap;
   }
   .pageBox {
     background-color: #0D0F08;
@@ -28,15 +28,16 @@ body{
     justify-content: flex-start;
     height: 80px;
     font-style: normal;
-    font-family: "Montserrat";
+    font-family: "Yeseva One";
     font-weight: 400;
-    font-size: 30px;
+    font-size: 52px;
     text-align: left;
-    border: 2px solid orange;
     }
     .pageBox p {
         color: white;
-        
+        margin: 0;
+        padding-left: 20px;
+        white-space: nowrap;
     }
     .mainBox {
         background-image: url("images/tree.jpg");
@@ -47,7 +48,27 @@ body{
         align-items: center;
         justify-content: center;
         height: 1000px;
-        border: 2px solid orange;
         }
+    .donateBox {
+          background-color: #CFD9CE;
+          padding: 10px;
+          margin: 35px;
+          margin-left: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 60px;
+          height: 15px;
+          font-style: normal;
+          font-family: "Thasadith";
+          font-weight: 400;
+          font-size: 20px;
+          }
+    .donateBox p {
+      color: black;
+      text-align: center;
+      vertical-align: center;
+      transform: translateX(-13%)
+    }
 
   
