@@ -103,13 +103,21 @@ html, body{
   .navBar button:hover{
     background-color: white;
   }
-.mainText{
+.mainText {
   color: white;
-  font-family: "Noto Serif Georgian";
   font-size: 80px;
+  font-family: "Noto Serif Georgian";
   font-weight: 500;
-  margin-left: 70px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5)
 }
+.firstline{
+  margin-top: 60px;
+  margin-left: 60px;
+}
+.secondline {
+  margin-left: 140px;
+}
+
 .TreeDropdown:hover .Treecontent, .Treecontent:hover {
   display: flex;
 }
