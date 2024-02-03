@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="homestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Thasadith&display=swap" rel="stylesheet">
+    <title>Tales of Siam</title>
+</head>
+<body>
+    <div class="container">
+        <div class="titleBox">
+            <p>Tales of Siam: Stories From the Heart of the Forest</p>
+        </div> 
+        <nav class="navBar">
+            <div class="navText">Tales of Siam</div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="treeshome.html">Trees</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><button class="donateButton">Donate</button></li>
+            </ul>
+        </nav>
+        <div class="mainBox"></div>
+    </div>
+</body>
+</html>
+
+    
+
+
+
+    
+
+</body>
+
+
+
+html, body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 100%; 
+    overflow-x: auto;
+    overflow-y: auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.titleBox {
+    background-color:  #747F71;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
+    width: 100vw;
+    font-style: normal;
+    font-family: "Josefin Sans";
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    }
+.titleBox p {
+    color: white;
+    margin: 0;
+    white-space: nowrap;
+  }
+.navBar {
+  background-color: #0D0F08;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  top: 28px;
+  z-index: 1000;
+
+@media (max-width: 768px) {
+  flex-direction: column;
+  align-items: flex-end;
+}
+}
+.navBar ul {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  list-style: none;
+}
+.navBar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  font-family: "Thasadith";
+  font-size: 16px;
+}
+.navBar a:hover{
+ background-color: #2D351D;
+}
+.donateButton {
+  background-color:#CFD9CE;
+  color: black;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Thasadith";
+  font-size: 16px; 
+  margin-right: 29px;
+  margin-left: 15px;
+}
+
+.navBar button:hover{
+  background-color: white;
+}
+.navText {
+  color: white;
+  font-family: "Yeseva One";
+  font-size: 45px;
+  margin-left: 29px;
+  white-space: nowrap;
+  @media (max-width: 768px) {
+    align-self: flex-start;
+    align-items: center; 
+    margin-left: 15px;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.mainBox {
+  background-image: url("images/tree.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+  

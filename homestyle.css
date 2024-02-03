@@ -1,94 +1,96 @@
 html, body{
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    max-width: 100%; 
-    overflow-x: auto;
-    overflow-y: auto;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%; 
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.mainBox{
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/tree.jpg");
+  background-position: center;
+  background-size: cover;
+  overflow-y: auto;
 }
 .titleBox {
-    background-color:  #747F71;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 28px;
-    width: 100vw;
-    font-style: normal;
-    font-family: "Josefin Sans";
-    font-weight: 400;
-    font-size: 15px;
-    text-align: center;
-    }
-.titleBox p {
+  background-color:  #747F71;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  width: 100%;
+  font-style: normal;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  position: absolute;
+  }
+  .titleBox p {
     color: white;
     margin: 0;
     white-space: nowrap;
   }
-.navBar {
-  background-color: #0D0F08;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  width: 100vw;
-  top: 28px;
-  z-index: 1000;
-}
-.navBar ul {
-  height: 35px;
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  list-style: none;
-}
-.navBar a {
-  color: white;
-  text-decoration: none;
-  padding: 15px;
-  display: block;
-  text-align: center;
-  font-family: "Thasadith";
-  font-size: 16px;
-}
-.navBar a:hover{
- background-color: #2D351D;
-}
-.donateButton {
-  background-color:#CFD9CE;
-  color: black;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  font-weight: 600;
-  font-family: "Thasadith";
-  font-size: 16px; 
-  margin-right: 29px;
-  margin-left: 15px;
-}
-
-.navBar button:hover{
-  background-color: white;
-}
 .navText {
-  color: white;
-  font-family: "Yeseva One";
-  font-size: 45px;
-  margin-left: 29px;
-  white-space: nowrap;
+    color: white;
+    font-family: "Yeseva One";
+    font-size: 45px;
+    margin-left: 25px;
+    white-space: nowrap;
+    padding: 0;
+    margin-right: auto;
 }
-
-.mainBox {
-  background-image: url("images/tree.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+  .navBar {
+    background-color: #0D0F08;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    top: 28px;
+    z-index: 1000;
+    min-width: max-content;
+    margin-top: 28px;
+  }
+  .navBar ul {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
+    padding: 0;
+  }
+  .navBar a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    font-family: "Thasadith";
+    font-size: 16px;
+  }
+  .navBar a:hover{
+   background-color: #2D351D;
+  }
+  .donateButton {
+    background-color:#CFD9CE;
+    color: black;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: "Thasadith";
+    font-size: 16px; 
+    margin-right: 29px;
+    margin-left: 14px;
+  }
+  
+  .navBar button:hover{
+    background-color: white;
   }
