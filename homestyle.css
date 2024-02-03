@@ -96,10 +96,57 @@ html, body{
     font-weight: 600;
     font-family: "Thasadith";
     font-size: 16px; 
-    margin-right: 29px;
+    margin-right: 25px;
     margin-left: 14px;
   }
   
   .navBar button:hover{
     background-color: white;
   }
+.mainText{
+  color: white;
+  font-family: "Noto Serif Georgian";
+  font-size: 80px;
+  font-weight: 500;
+  margin-left: 70px;
+}
+.TreeDropdown:hover .Treecontent, .Treecontent:hover {
+  display: flex;
+}
+
+.Treecontent {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: #0D0F08;
+  z-index: 1;
+  top: 100%;
+  width: max-content;
+}
+
+.Treecontent ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+}
+
+.Treecontent li {
+  padding: 10px;
+  background-color: #0D0F08;
+  z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.Treecontent a {
+  color: white;
+  text-decoration: none;
+  background-color: #0D0F08;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  align-items: center;
+}
+.Treecontent a:hover {
+  background-color:  #2D351D;
+}
