@@ -3,14 +3,17 @@ html, body{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    max-width: 100%;
+    max-width: 100%; 
+    overflow-x: auto;
+    overflow-y: auto;
 }
 .titleBox {
     background-color:  #747F71;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     height: 28px;
+    width: 100vw;
     font-style: normal;
     font-family: "Josefin Sans";
     font-weight: 400;
@@ -30,6 +33,9 @@ html, body{
   overflow: hidden;
   display: flex;
   align-items: center;
+  width: 100vw;
+  top: 28px;
+  z-index: 1000;
 }
 .navBar ul {
   height: 35px;
@@ -79,8 +85,10 @@ html, body{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 1000px;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
   }
