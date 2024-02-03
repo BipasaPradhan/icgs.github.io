@@ -52,27 +52,85 @@ html, body {
     place-items: center;
     top: 138px;
     width: 100vw;
-    /* border: 2px solid pink; */
     align-items: center;
     justify-content: center;
-    border: 2px solid orange;
+    border: 2px solid green;
 }
 
 #map {
-    /* border: 2px solid green; */
+    position: relative;
     height: 960px;
     width: 540px;
     border: 2px solid red;
 }
 
 #map img {
-    opacity: 1;
-    height: 100%;
-    width: 540px;
-    border: 2px solid yellow;
     position: absolute;
+    opacity: 1;
+    border: 2px solid purple;
 }
 
-#map img:hover {
+#central {
+    position: relative;
+    height: 240px;
+    width: 190px;
+    opacity: 1;
+    top: 335px;
+    left: 100px;
+    /* border: 2px solid pink; */
+    background-image: url("images/central.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#east {
+    position: relative;
+    height: 350px;
+    width: 240px;
+    opacity: 1;
+    top: -50px;
+    left: 260px;
+    /* border: 2px solid pink; */
+    background-image: url("images/east.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#north {
+    position: relative;
+    height: 220px;
+    width: 230px;
+    opacity: 1;
+    top: -470px;
+    left: 50px;
+    /* border: 2px solid pink; */
+    background-image: url("images/north.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#south {
+    position: relative;
+    height: 350px;
+    width: 250px;
+    opacity: 1;
+    top: -245px;
+    left: 140px;
+    /* border: 2px solid pink; */
+    background-image: url("images/south.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#central:hover {
+    opacity: 0.7;
+}
+#east:hover {
+    opacity: 0.7;
+}
+#north:hover {
+    opacity: 0.7;
+}
+#south:hover {
     opacity: 0.7;
 }
