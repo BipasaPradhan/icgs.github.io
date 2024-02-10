@@ -183,12 +183,34 @@ html, body {
 }
 
 .welcomeMessage {
-  background-color: #CFD9CE;
-  width: 300px;
-  height: 100px;
-  padding: 10px;
-  position: absolute;
-  right:25px;
-  bottom: 25px;
+  display: flex;
+  align-items: center;
   text-align: center;
+  background-color: rgba(207, 217, 206, 0.85);
+  width: 350px;
+  height: 210px;
+  padding: 10px;
+  margin: 10px;
+  position: absolute;
+  right: 90px;
+  bottom: 30px;
+  font-family: "Palanquin";
+  font-size: 16px;
+}
+.welcomeMessage p {
+  color: black;
+  margin: 10px;
+}
+.welcomeMessage strong.donate{
+  color: #386814;
+  font-weight: bold;
+}
+.welcomeMessage strong.begin{
+  color: #5F8720;
+  font-weight: bold;
+}
+@media only screen and (max-width: 1000px) {
+  .welcomeMessage {
+    display: none;
+  }
 }
