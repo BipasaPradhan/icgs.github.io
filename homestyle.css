@@ -14,7 +14,7 @@ html, body {
   background-image: url("images/tree.jpg");
   background-position: center;
   background-size: cover;
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
   position: relative;
 }
@@ -83,7 +83,7 @@ html, body {
 }
 
 .navBar a:hover { /* hovering effect for nav bar */
-  background-color: #2D351D;
+  background-color: #3f4b28;
 }
 
 .donateButton {
@@ -142,7 +142,7 @@ html, body {
 }
 
 .dropdown-menu li a:hover {
-  background-color: #2D351D;
+  background-color: #3f4b28;
 }
 
 .mainText {
@@ -192,8 +192,8 @@ html, body {
   padding: 10px;
   margin: 10px;
   position: absolute;
-  right: 90px;
-  bottom: 30px;
+  right: 80px;
+  bottom: 20px;
   font-family: "Palanquin";
   font-size: 16px;
 }
