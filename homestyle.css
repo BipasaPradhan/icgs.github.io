@@ -15,7 +15,7 @@ html, body {
   background-position: center;
   background-size: cover;
   overflow-y: auto;
-  overflow-x: auto;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -192,9 +192,9 @@ html, body {
   height: 250px;
   padding: 10px;
   margin: 10px;
-  bottom: 20px;
-  left: 50%;
-  transform: translate(185%, -15%);
+  position: relative;
+  top: calc(100vh - 107%);
+  left: calc(100vw - 40%); 
   font-family: "Palanquin";
   font-size: 17px;
 }
@@ -232,21 +232,4 @@ html, body {
     margin-right: auto;
     margin-left: 215px;
   }
-}
-@media only screen and (min-width: 1300px) {
-  .mainText {
-    font-size: 100px;
-}
-.mainBox {
-  overflow-y: auto;
-}
-.beginButton {
-  margin-left: 420px;
-}
-.welcomeMessage {
-  width: 450px;
-  height: 300px;
-  font-size: 19px;
-  transform: translate(190%, -15%)
-}
 }
