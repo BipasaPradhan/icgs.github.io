@@ -210,12 +210,9 @@ html, body {
   color: #5F8720;
   font-weight: bold;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   .welcomeMessage {
     display: none;
-  }
-  .mainBox {
-    overflow-x: hidden;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -250,6 +247,6 @@ html, body {
   width: 450px;
   height: 300px;
   font-size: 19px;
-  transform: translate(280%, -15%)
+  transform: translate(190%, -15%)
 }
 }
