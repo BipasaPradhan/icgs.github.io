@@ -235,18 +235,15 @@ html, body {
 }
 @media only screen and (min-width: 1300px) {
   .mainText {
-    font-size: 120px;
+    font-size: 100px;
 }
 .beginButton {
-  width: 130px;
-  height: 70px;
-  margin-left: 500px;
-  font-size: 25px;
+  margin-left: 420px;
 }
 .welcomeMessage {
   width: 450px;
   height: 300px;
   font-size: 19px;
-  transform: translate(280%, -15%)
+  transform: translate(180%, -15%)
 }
 }
