@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tales of Siam</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="homestyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -16,18 +17,28 @@
     <div class="titleBox">
         <p>Tales of Siam: Stories From the Heart of the Forest</p>
     </div>
-    <nav class="navBar">
-        <div class="navText">About</div>
-        
-        <ul>
-            <li><a href="Homepage.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="treeshome.html">Trees</a></li>
-            <li><a href="">Contact Us</a></li>
-            <li><button class="donateButton">Donate</button></li>
-        </ul>
-        
-    </nav>
+    <div class="navContainer">
+        <nav class="navBar">
+            <div class="navText">About</div>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="TreeDropdown">  <!--Trees drop dowm menu HTML starts from here-->
+                    <a href="treeshome.html">Trees &#9662;</a>
+                    <div class="Treecontent">
+                        <ul class="dropdown-menu">
+                            <li><a href="Northtrees.html">The Northern Region</a></li>  <!--Only South and Central needs to be linked-->
+                            <li><a href="#">The Southern Region</a></li>
+                            <li><a href="Easttrees.html">The Eastern Region</a></li>
+                            <li><a href="#">The Central Region</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li><button class="donateButton">Donate</button></li>
+            </ul>
+        </nav>
+    </div>
     <div id="mainBox">
     </div>
 </body>
