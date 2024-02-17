@@ -15,7 +15,7 @@ html, body {
   background-position: center;
   background-size: cover;
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: auto;
   position: relative;
 }
 
@@ -210,9 +210,12 @@ html, body {
   color: #5F8720;
   font-weight: bold;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .welcomeMessage {
     display: none;
+  }
+  .mainBox {
+    overflow-x: hidden;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -237,6 +240,9 @@ html, body {
   .mainText {
     font-size: 100px;
 }
+.mainBox {
+  overflow-y: auto;
+}
 .beginButton {
   margin-left: 420px;
 }
@@ -244,6 +250,6 @@ html, body {
   width: 450px;
   height: 300px;
   font-size: 19px;
-  transform: translate(190%, -15%)
+  transform: translate(280%, -15%)
 }
 }
