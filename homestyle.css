@@ -14,7 +14,7 @@ html, body {
   background-image: url("images/tree.jpg");
   background-position: center;
   background-size: cover;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   position: relative;
 }
@@ -147,14 +147,15 @@ html, body {
 
 .mainText {
   color: white;
-  font-size: 80px;
+  font-size: 90px;
   font-family: "Noto Serif Georgian";
   font-weight: 500;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5)
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  margin-top: 50px;
 }
 
 .firstline {
-  margin-top: 50px;
+  margin-top: auto;
   margin-left: 60px;
 }
 
@@ -169,8 +170,8 @@ html, body {
   border-radius: 50px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   width: 120px;
-  height: 55px;
-  margin-left: 320px;
+  height: 60px;
+  margin-left: 370px;
   font-family: "Noto Serif Georgian";
   color: black;
   font-size: 23px;
@@ -187,25 +188,25 @@ html, body {
   align-items: center;
   text-align: center;
   background-color: rgba(207, 217, 206, 0.85);
-  width: 350px;
-  height: 210px;
+  width: 400px;
+  height: 250px;
   padding: 10px;
   margin: 10px;
-  position: absolute;
-  right: 80px;
   bottom: 20px;
+  left: 50%;
+  transform: translate(185%, -15%);
   font-family: "Palanquin";
-  font-size: 16px;
+  font-size: 17px;
 }
 .welcomeMessage p {
   color: black;
   margin: 10px;
 }
-.welcomeMessage strong.donate{
+.donate a {
   color: #386814;
   font-weight: bold;
 }
-.welcomeMessage strong.begin{
+.begin a {
   color: #5F8720;
   font-weight: bold;
 }
@@ -213,4 +214,39 @@ html, body {
   .welcomeMessage {
     display: none;
   }
+}
+@media only screen and (max-width: 700px) {
+  .firstline {
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 11%;
+  }
+  .secondline {
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 24%;
+  }
+  .beginButton {
+    margin-right: auto;
+    margin-left: 215px;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .mainText {
+    font-size: 120px;
+}
+.beginButton {
+  width: 130px;
+  height: 70px;
+  margin-left: 500px;
+  font-size: 25px;
+}
+.welcomeMessage {
+  width: 450px;
+  height: 300px;
+  font-size: 19px;
+  transform: translate(280%, -15%)
+}
 }
