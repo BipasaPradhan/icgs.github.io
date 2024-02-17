@@ -49,25 +49,31 @@ html, body {
 #mainBox {
     position: absolute;
     display: grid;
-    place-items: center;
+    place-items:center;
     top: 138px;
     width: 100vw;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
-    /* border: 2px solid green; */
+    border: 2px solid green;
 }
 
 #map {
     position: relative;
     height: 960px;
     width: 540px;
-    /* border: 2px solid red; */
+    border: 2px solid red;
 }
 
 #map img {
     position: absolute;
     opacity: 1;
     /* border: 2px solid purple; */
+}
+
+#text1 {
+    position: absolute;
+    right:125px;
+    border: 2px solid brown;
 }
 
 #central {
