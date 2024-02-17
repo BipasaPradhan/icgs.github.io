@@ -57,7 +57,7 @@ html, body {
     border: 2px solid green;
 }
 
-#map {
+#map {  
     position: relative;
     height: 960px;
     width: 540px;
@@ -72,7 +72,13 @@ html, body {
 
 #text1 {
     position: absolute;
-    right:125px;
+    text-align: center;
+    font-size: 24px;
+    font-style:normal;
+    font-family: "Noto Serif Georgian";
+    right:100px;
+    left:100px;
+    top:0px;
     border: 2px solid brown;
 }
 
