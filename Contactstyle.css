@@ -145,39 +145,247 @@ html, body {
     background-color: #3f4b28;
   }
 
-.nameB{
-  display: flex;
+.contactB {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+
+.nameB{
+  position: absolute;
+  display: flex;
   padding: 10px;
   background-color: hsl(110, 8%, 57%);
-  top: 39%;
-  left: 41%;
+  top: -11.5%;
+  left: 8%;
   font-size: 20px;
   font-weight: bold;
   font-family: "Alice";
   z-index: 2;
 }
 .infoB {
+  position: relative;
   display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -20%);
+  flex-direction: column;
   padding: 15px;
-  justify-content:flex-start;
-  align-items: center;
+  font-size: 16px;
   background-color: #ECEDE2;
-  height: 160px;
-  width: 250px;
-  font-size: 25px;
-  font-family: "Alice";
+  width: fit-content;
+  height: fit-content;
+  font-family: "Noto Serif Georgian";
 }
-.gmail-container{
-  display: inline-flex;
+.gmail-container {
+  display: flex;
   align-items: center;
-  transform: translateY(-40px);
+  margin-bottom: 10px;
+  margin-top: 15px;
 }
 .gmail-text{
   margin-left: 10px;
+  text-decoration: none;
+  color: #4c5e23;
+}
+.linkedin-container{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.linkedin-text {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #4c5e23;
+}
+.instagram-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.instagram-text {
+  margin: 10px;
+  text-decoration: none;
+  color:#4c5e23
+}
+.gmail-container::after { 
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 2px;
+  background-color: black;
+  bottom: 124.4px
+}
+.linkedin-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 2px;
+  background-color: black;
+  bottom: 66.6px
+}
+.contactPa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(76%, -25%);
+}
+.namePa{
+  position: absolute;
+  display: flex;
+  padding: 10px;
+  background-color: hsl(110, 8%, 57%);
+  top: -11.5%;
+  left: 8%;
   font-size: 20px;
+  font-weight: bold;
+  font-family: "Alice";
+  z-index: 2;
+}
+.infoPa {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  font-size: 16px;
+  background-color: #ECEDE2;
+  width: fit-content;
+  height: fit-content;
+  font-family: "Noto Serif Georgian";
+}
+.gmail-containerPa {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.gmail-textPa {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #4c5e23;
+}
+.linkedin-containerPa {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.linkedin-textPa {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #4c5e23;
+}
+.instagram-containerPa {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.instagram-textPa {
+  margin: 10px;
+  text-decoration: none;
+  color:#4c5e23
+}
+.gmail-containerPa::after { 
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 2px;
+  background-color: black;
+  bottom: 124.4px
+}
+.linkedin-containerPa::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 2px;
+  background-color: black;
+  bottom: 66.6px
+}
+
+.contactPe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-300%, -50%);
+}
+.namePe {
+  position: absolute;
+  display: flex;
+  padding: 10px;
+  background-color: hsl(110, 8%, 57%);
+  top: -11.5%;
+  left: 8%;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Alice";
+  z-index: 2;
+}
+.infoPe {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  font-size: 16px;
+  background-color: #ECEDE2;
+  width: fit-content;
+  height: fit-content;
+  font-family: "Noto Serif Georgian";
+}
+.gmail-containerPe {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.gmail-textPe {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #4c5e23;
+}
+.linkedin-containerPe {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.linkedin-textPe {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #4c5e23;
+}
+.instagram-containerPe {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.instagram-textPe {
+  margin: 10px;
+  text-decoration: none;
+  color:#4c5e23
+}
+.gmail-containerPe::after { 
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 2px;
+  background-color: black;
+  bottom: 124.4px
+}
+.linkedin-containerPe::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 2px;
+  background-color: black;
+  bottom: 66.6px
+}
+@media only screen and (min-width: 1300px) {
+  .nameB, .namePa, .namePe {
+    font-size: 25px;
+  }
+  .infoB, .infoPa, .infoPe {
+    font-size: 21px
+  }
 }

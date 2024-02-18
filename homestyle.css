@@ -193,8 +193,8 @@ html, body {
   padding: 10px;
   margin: 10px;
   position: relative;
-  top: calc(100vh - 107%);
-  left: calc(100vw - 40%); 
+  top: calc(100vh - 108%);
+  left: calc(100vw - 38%); 
   font-family: "Palanquin";
   font-size: 17px;
 }
