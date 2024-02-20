@@ -1,0 +1,257 @@
+html, body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  .mainBox {      /* I have made the main box as the main container of every other boxes */
+    width: 100%;
+    height: 100vh;
+    background-color: #DDE6DC;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+  .titleBox {
+    background-color: #747F71;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
+    width: 100vw;
+    font-style: normal;
+    font-family: "Josefin Sans";
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    top: 0;
+  }
+  
+  .titleBox p {
+    color: white;
+    margin: 0;
+    white-space: nowrap;
+  }
+  
+  .navText {
+    color: white;
+    font-family: "Yeseva One";
+    font-size: 45px;
+    margin-left: 29px;
+    white-space: nowrap;
+    padding: 0;
+    margin-right: auto;
+  }
+  
+  .navBar { /* main design for the nav bar */
+    background-color: #0D0F08;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 1000;
+  }
+  
+  .navBar ul {   /* designates how the nav bar will look */
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navBar a { /* designates how the nav bar text will look */
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    font-family: "Thasadith";
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  
+  .navBar a:hover { /* hovering effect for nav bar */
+    background-color: #3f4b28;
+  }
+  
+  .donateButton {
+    background-color: #CFD9CE;
+    color: black;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: "Thasadith";
+    font-size: 16px;
+    margin-right: 25px;
+    margin-left: 14px;
+  }
+  
+  .navBar button:hover { /* hovering effect for donate button */
+    background-color: #F3FFF2;
+  }
+  
+  .TreeDropdown { /* start of dropdown menu */
+    position: relative;
+  }
+  
+  .Treecontent { /* main drop down design */
+    display: none;
+    position: absolute;
+    width: max-content;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 0;
+    top: 100%;
+  }
+  
+  .TreeDropdown:hover .Treecontent { /* how the drop down will look when you hover over it */
+    display: block;
+  }
+  
+  .dropdown-menu { /* how the contents in the dropdowm will look */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdown-menu li { /* how the boxes of the menu will look */
+    padding: 6px;
+    background-color: #0D0F08;
+    width: 100%;
+  }
+  
+  .dropdown-menu li a { /* dropdown box text */
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #3f4b28;
+  }
+  .aboutus {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 245px;
+    background-color: #2D351D;
+    color: white;
+  }
+.firstline {
+    font-size: 30px;
+    font-family: "Alice";
+    margin-bottom: 15px;
+}
+.secondline {
+    width: 70%;
+    font-family: "Montserrat";
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+@media only screen and (min-width: 1300px) {
+    .firstline {
+        font-size: 40px;
+    }
+    .secondline {
+        font-size: 21px;
+    }
+}
+.missionstatement {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    top: 380px;
+    width: 100%;
+    left: 50%; 
+    transform: translateX(-77.5%);
+}
+.headermission {
+    width: fit-content;
+    background-color: #0D0F08;
+    position: relative;
+    color: white; 
+    padding: 15px;
+    font-family: "Alice";
+    font-size: 25px;
+    z-index: 1;
+    margin: 5px auto -31px;
+}
+.statementmission {
+    position: relative;
+    width: 400px;
+    height: fit-content;
+    background-color: #5c6843;
+    color: white;
+    padding: 30px;
+    padding-top: 50px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    line-height: 1.65;
+    z-index: 0;
+    margin: 0;
+    margin-bottom: 45px;
+}
+@media only screen and (max-width: 800px ) {
+    .missionstatement {
+        left: 0;
+        transform: translateX(0);
+    }
+    .statementmission {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+@media only screen and (min-width: 1300px ) {
+    .statementmission {
+        font-size: 17px;
+        margin-bottom: 0;
+    }
+    
+}
+.whatweoffer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    top: 380px;
+    width: 100%;
+}
+.headerservices {
+    position: relative;
+    font-family: "Alice";
+    font-size: 25px;
+    padding: 15px;
+    z-index: 1;
+    background-color: #0D0F08;
+    color: white;
+    width: fit-content;
+    margin: 5px auto -31px;
+    left: 10%;
+    transform: translateX(-80%);
+  }
