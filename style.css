@@ -51,7 +51,7 @@ html, body {
     display: flex;
     top: 138px;
     width: 100vw;
-    height: 170%;
+    height: 1150px;
     /* align-items: center; */
     justify-content: center;
     border: 2px solid green;
@@ -81,8 +81,7 @@ html, body {
     font-size: 24px;
     font-style:normal;
     font-family: "Noto Serif Georgian";
-    right:100px;
-    left:100px;
+    width: 1195px;
     height: 180px;
     background-color: hsl(110, 8%, 57%);
     border: 2px solid brown;
@@ -153,6 +152,10 @@ html, body {
     opacity: 0.7;
 }
 
+
+.regions {
+    display:block;
+}
 #eastregion {
     position: absolute;
     display: flex;
@@ -165,8 +168,8 @@ html, body {
     font-family: "Noto Serif Georgian";
     width: 500px;
     height: 100px;
-    top: 300px;
-    right: 70px;
+    top: 30%;
+    right: 10%;
     background-color: #2e361e;
     border-radius: 10px 30px 20px 40px;
     /* border: 2px solid yellow; */
@@ -188,8 +191,8 @@ html, body {
     font-family: "Noto Serif Georgian";
     width: 500px;
     height: 100px;
-    top: 700px;
-    right: 70px;
+    bottom: 20%;
+    right: 15%;
     background-color: #758072;
     border-radius: 10px 30px 20px 40px;
     /* border: 2px solid yellow; */
@@ -199,7 +202,7 @@ html, body {
     color: #D0D9CD;
 }
 
-#eastregion {
+#northregion {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -211,40 +214,16 @@ html, body {
     font-family: "Noto Serif Georgian";
     width: 500px;
     height: 100px;
-    top: 300px;
-    right: 70px;
-    background-color: #2e361e;
+    top: 20%;
+    left: 15%;
+    background-color: #4e523c;
     border-radius: 10px 30px 20px 40px;
     /* border: 2px solid yellow; */
 }
 
-#eastregion h3 {
+#northregion h3 {
     color: #D0D9CD;
 }
-
-#eastregion {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding: 0%;
-    font-size: 42px;
-    font-style:normal;
-    font-family: "Noto Serif Georgian";
-    width: 500px;
-    height: 100px;
-    top: 300px;
-    right: 70px;
-    background-color: #2e361e;
-    border-radius: 10px 30px 20px 40px;
-    /* border: 2px solid yellow; */
-}
-
-#eastregion h3 {
-    color: #D0D9CD;
-}
-
 /* .regions:hover {
     -webkit-animation: fadeinout 4s linear forwards;
     animation: fadeinout 4s linear forwards;
