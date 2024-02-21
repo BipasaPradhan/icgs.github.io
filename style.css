@@ -80,9 +80,11 @@ html, body {
     padding-left:20px;
     display: flex;
     font-size: clamp(1.5vw, calc(18px + 0.5vw), 30px);
-    font-style:normal;
-    font-family: "Noto Serif Georgian";
-    width: 50vw;
+    font-size: clamp(1.5vw, 24px, 30px);
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Montserrat";
+    width: clamp(400px, 50vw, 700px);
     height: auto;
     background-color: hsl(110, 8%, 57%);
     /* border: 2px solid brown; */
