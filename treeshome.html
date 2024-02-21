@@ -52,22 +52,32 @@
             <a href="Northtrees.html"><div id="north"></div></a>
             <a href="#"><div id="south"></div></a>
         </div>
-        <div class="regions" id="eastregion">
+        <div id="eastregion">
+            <script>
+                const divElement = document.getElementById("eastregion");
+                const region = document.getElementById("east");
+                region.addEventListener("mouseover", ()=>{
+                    divElement.style.visibility = 'visible';
+                })
+                region.addEventListener("mouseout", ()=>{
+                    divElement.style.visibility = 'hidden';
+                })
+            </script>
             <h3>
                 Eastern Region
             </h3>
         </div>
-        <div class="regions" id="southregion">
+        <div id="southregion">
             <h3>
                 Southern Region
             </h3>
         </div>
-        <div class="regions" id="northregion">
+        <div id="northregion">
             <h3>
                 Northern Region
             </h3>
         </div>
-        <div class="regions" id="centralregion">
+        <div id="centralregion">
             <h3>
                 Central Region
             </h3>
