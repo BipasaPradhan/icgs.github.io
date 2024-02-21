@@ -74,12 +74,12 @@ html, body {
 
 #text1 {
     position: absolute;
-    text-align:justify;
+    text-align:center;
     justify-content: center;
     padding-right:20px;
     padding-left:20px;
     display: flex;
-    font-size: 1.25vw;
+    font-size: clamp(1.5vw, calc(18px + 0.5vw), 30px);
     font-style:normal;
     font-family: "Noto Serif Georgian";
     width: 50vw;
@@ -143,6 +143,7 @@ html, body {
 #central:hover {
     opacity: 0.7;
 }
+
 #east:hover {
     opacity: 0.7;
 }
@@ -153,21 +154,18 @@ html, body {
     opacity: 0.7;
 }
 
-
-.regions {
-    display:block;
-}
 #eastregion {
     position: absolute;
     display: flex;
+    visibility: hidden;
     justify-content: center;
     text-align: center;
     align-items: center;
     padding: 0%;
-    font-size: clamp(2.5rem, 1vw + 0.25rem, 10rem);
+    font-size: 32px;
     font-style:normal;
     font-family: "Noto Serif Georgian";
-    width: 25vw;
+    width: 500px;
     height: 100px;
     top: 30%;
     right: 10%;
@@ -183,6 +181,7 @@ html, body {
 #southregion {
     position: absolute;
     display: flex;
+    visibility: hidden;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -207,6 +206,7 @@ html, body {
     position: absolute;
     display: flex;
     justify-content: center;
+    visibility:hidden;
     text-align: center;
     align-items: center;
     padding: 0%;
@@ -228,9 +228,9 @@ html, body {
 
 #centralregion {
     position: absolute;
-    display: flex;
     justify-content: center;
     text-align: center;
+    visibility: hidden;
     align-items: center;
     padding: 0%;
     font-size: 32px;
@@ -238,8 +238,8 @@ html, body {
     font-family: "Noto Serif Georgian";
     width: 500px;
     height: 100px;
-    top: 20%;
-    left: 15%;
+    bottom: 35%;
+    left: 13%;
     background-color: #5d643e;
     border-radius: 10px 30px 20px 40px;
     /* border: 2px solid yellow; */
@@ -248,16 +248,3 @@ html, body {
 #centralregion h3 {
     color: #D0D9CD;
 }
-/* .regions:hover {
-    -webkit-animation: fadeinout 4s linear forwards;
-    animation: fadeinout 4s linear forwards;
-    opacity: 0;
-}
-
-@-webkit-keyframes fadeinout {
-  50% { opacity: 1; }
-}
-
-@keyframes fadeinout {
-  50% { opacity: 1; }
-} */

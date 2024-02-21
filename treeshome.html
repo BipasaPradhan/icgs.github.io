@@ -52,19 +52,64 @@
             <a href="Northtrees.html"><div id="north"></div></a>
             <a href="#"><div id="south"></div></a>
         </div>
-        <div class="regions" id="eastregion">
+        <div id="eastregion">
+            <script>
+                const eastElement = document.getElementById("eastregion");
+                const east = document.getElementById("east");
+                east.addEventListener("mouseover", ()=>{
+                    eastElement.style.visibility = 'visible';
+                })
+                east.addEventListener("mouseout", ()=>{
+                    eastElement.style.visibility = 'hidden';
+                })
+            </script>
             <h3>
                 Eastern Region
             </h3>
         </div>
-        <div class="regions" id="southregion">
+        <div id="southregion">
+            <script>
+                const southElement = document.getElementById("southregion");
+                const south = document.getElementById("south");
+                south.addEventListener("mouseover", ()=>{
+                    southElement.style.visibility = 'visible';
+                })
+                south.addEventListener("mouseout", ()=>{
+                    southElement.style.visibility = 'hidden';
+                })
+            </script>
             <h3>
                 Southern Region
             </h3>
         </div>
-        <div class="regions" id="northregion">
+        <div id="northregion">
+            <script>
+                const northElement = document.getElementById("northregion");
+                const north = document.getElementById("north");
+                north.addEventListener("mouseover", ()=>{
+                    northElement.style.visibility = 'visible';
+                })
+                north.addEventListener("mouseout", ()=>{
+                    northElement.style.visibility = 'hidden';
+                })
+            </script>
             <h3>
                 Northern Region
+            </h3>
+        </div>
+        <div id="centralregion">
+            <script>
+                const centralElement = document.getElementById("centralregion");
+                const central = document.getElementById("central");
+                central.addEventListener("mouseover", ()=>{
+                    centralElement.style.visibility = 'visible';
+                })
+                central.addEventListener("mouseout", ()=>{
+                    centralElement.style.visibility = 'hidden';
+                })
+            </script>
+            <h3>
+                Central Region
             </h3>
         </div>
     </div>
