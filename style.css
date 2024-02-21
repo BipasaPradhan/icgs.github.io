@@ -157,18 +157,18 @@ html, body {
 #eastregion {
     position: absolute;
     display: flex;
-    visibility: hidden;
+    opacity: 0;
     justify-content: center;
     text-align: center;
     align-items: center;
     padding: 0%;
-    font-size: 32px;
+    font-size: clamp(16px, 2vw,32px);
     font-style:normal;
     font-family: "Noto Serif Georgian";
-    width: 500px;
-    height: 100px;
+    width: clamp(100px, 23vw, 500px);
+    height: auto;
     top: 30%;
-    right: 10%;
+    left: clamp(calc(50vw + 230px), calc(60vw), calc(50vw + 300px - 5vw));
     background-color: #2e361e;
     border-radius: 10px 30px 20px 40px;
     /* border: 2px solid yellow; */
@@ -181,16 +181,17 @@ html, body {
 #southregion {
     position: absolute;
     display: flex;
-    visibility: hidden;
+    opacity: 0;
+    /* visibility: hidden; */
     justify-content: center;
     text-align: center;
     align-items: center;
     padding: 0%;
-    font-size: 32px;
+    font-size: clamp(16px, 2vw, 32px);
     font-style:normal;
     font-family: "Noto Serif Georgian";
-    width: 500px;
-    height: 100px;
+    width: clamp(100px, 23vw, 500px);
+    height: auto;
     bottom: 20%;
     right: 15%;
     background-color: #758072;
@@ -206,17 +207,18 @@ html, body {
     position: absolute;
     display: flex;
     justify-content: center;
-    visibility:hidden;
+    /* visibility:hidden; */
+    opacity: 0;
     text-align: center;
     align-items: center;
     padding: 0%;
-    font-size: 32px;
+    font-size: clamp(16px, 2vw, 32px);
     font-style:normal;
     font-family: "Noto Serif Georgian";
-    width: 500px;
-    height: 100px;
+    width: clamp(100px, 23vw, 500px);
+    height: auto;
     top: 20%;
-    left: 15%;
+    right: clamp(calc(50vw + 230px), calc(60vw), calc(50vw + 300px - 5vw));
     background-color: #4e523c;
     border-radius: 10px 30px 20px 40px;
     /* border: 2px solid yellow; */
@@ -230,16 +232,17 @@ html, body {
     position: absolute;
     justify-content: center;
     text-align: center;
-    visibility: hidden;
+    /* visibility: hidden; */
+    opacity: 0;
     align-items: center;
     padding: 0%;
-    font-size: 32px;
+    font-size: clamp(16px, 2vw, 32px);
     font-style:normal;
     font-family: "Noto Serif Georgian";
-    width: 500px;
-    height: 100px;
-    bottom: 35%;
-    left: 13%;
+    width: clamp(100px, 23vw, 500px);
+    height: auto;
+    bottom: 40%;
+    right: clamp(calc(50vw + 180px), calc(60vw), calc(50vw + 300px - 5vw));
     background-color: #5d643e;
     border-radius: 10px 30px 20px 40px;
     /* border: 2px solid yellow; */
@@ -247,4 +250,19 @@ html, body {
 
 #centralregion h3 {
     color: #D0D9CD;
+}
+
+@media only screen and (max-width: 900px) {
+    #eastregion {
+        display:none;
+    }
+    #northregion {
+        display:none;
+    }
+    #southregion {
+        display:none;
+    }
+    #centralregion {
+        display:none;
+    }
 }

@@ -41,6 +41,30 @@
         </nav>
     </div>
     <div id="mainBox">
+        <script>
+            function fadeIn(el) {
+                var opacity = 0; // Initial opacity
+                var interval = setInterval(function() {
+                    if (opacity < 1.0) {
+                        opacity += 0.1;
+                        el.style.opacity = opacity;
+                    } else {
+                        clearInterval(interval); // Stop the interval when opacity reaches 0
+                    }
+                }, 15);
+            }
+            function fadeOut(el) {
+                var opacity = 1; // Initial opacity
+                var interval = setInterval(function() {
+                    if (opacity > 0) {
+                        opacity -= 0.1;
+                        el.style.opacity = opacity;
+                    } else {
+                        clearInterval(interval); // Stop the interval when opacity reaches 0
+                    }
+                }, 15);
+            }
+        </script>
         <div id="text1">
             <h3>
                 Thailand has different areas with special kinds of trees. Click on a region to begin!
@@ -56,11 +80,11 @@
             <script>
                 const eastElement = document.getElementById("eastregion");
                 const east = document.getElementById("east");
-                east.addEventListener("mouseover", ()=>{
-                    eastElement.style.visibility = 'visible';
+                east.addEventListener("mouseover", (east)=>{
+                    fadeIn(eastElement);
                 })
                 east.addEventListener("mouseout", ()=>{
-                    eastElement.style.visibility = 'hidden';
+                    fadeOut(eastElement);
                 })
             </script>
             <h3>
@@ -72,10 +96,10 @@
                 const southElement = document.getElementById("southregion");
                 const south = document.getElementById("south");
                 south.addEventListener("mouseover", ()=>{
-                    southElement.style.visibility = 'visible';
+                    fadeIn(southElement);
                 })
                 south.addEventListener("mouseout", ()=>{
-                    southElement.style.visibility = 'hidden';
+                    fadeOut(southElement);
                 })
             </script>
             <h3>
@@ -87,10 +111,10 @@
                 const northElement = document.getElementById("northregion");
                 const north = document.getElementById("north");
                 north.addEventListener("mouseover", ()=>{
-                    northElement.style.visibility = 'visible';
+                    fadeIn(northElement);
                 })
                 north.addEventListener("mouseout", ()=>{
-                    northElement.style.visibility = 'hidden';
+                    fadeOut(northElement);
                 })
             </script>
             <h3>
@@ -102,10 +126,10 @@
                 const centralElement = document.getElementById("centralregion");
                 const central = document.getElementById("central");
                 central.addEventListener("mouseover", ()=>{
-                    centralElement.style.visibility = 'visible';
+                    fadeIn(centralElement);
                 })
                 central.addEventListener("mouseout", ()=>{
-                    centralElement.style.visibility = 'hidden';
+                    fadeOut(centralElement);
                 })
             </script>
             <h3>
