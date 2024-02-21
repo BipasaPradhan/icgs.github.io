@@ -234,7 +234,7 @@ html, body {
   }
 
   .headerservices {
-    position: absolute;
+    position: relative;
     font-family: "Alice";
     font-size: 25px;
     padding: 15px;
@@ -242,9 +242,8 @@ html, body {
     background-color: #0D0F08;
     color: white;
     width: fit-content;
+    top: 0;
     left: 50%;
-    top: 50%;
-    transform: translate(50%, 172%);
   }
   .whatweoffer {
     position: absolute;
