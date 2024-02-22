@@ -244,7 +244,6 @@ html, body {
     width: fit-content;
     top: 68px;
     left: 605px;
-    
   }
   .whatweoffer {
     position: absolute;
@@ -266,6 +265,7 @@ html, body {
     justify-content: center;
     align-items: center;
     position: relative;
+    text-decoration: none;
 }
 .headercharityguide, .headertreeguide, .headerphotographyshowcase {
     color: #2D351D;
@@ -279,6 +279,9 @@ html, body {
     border-width: 3px; 
     border-color: black;
     height: fit-content;
+}
+.headercharityguide:hover, .headertreeguide:hover, .headerphotographyshowcase:hover {
+  background-color: #7a8d7a;
 }
 .fa-tree, .fa-camera, .fa-donate {
     margin-top: 20px;
@@ -312,7 +315,7 @@ html, body {
   }
   @media only screen and (min-width: 1300px ) {
     .headerservices{
-        transform: translateX(95%);
+        transform: translateX(93%);
     }
     .whatweoffer {
         margin-left: 50px;
