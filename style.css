@@ -172,7 +172,6 @@ html, body {
     top: 30%;
     left: clamp(calc(50vw + 230px), calc(60vw), calc(50vw + 300px - 5vw));
     background-color: #2e361e;
-    border-radius: 10px 30px 20px 40px;
     /* border: 2px solid yellow; */
 }
 
@@ -197,7 +196,6 @@ html, body {
     bottom: 20%;
     right: 15%;
     background-color: #758072;
-    border-radius: 10px 30px 20px 40px;
     /* border: 2px solid yellow; */
 }
 
@@ -222,7 +220,6 @@ html, body {
     top: 20%;
     right: clamp(calc(50vw + 230px), calc(60vw), calc(50vw + 300px - 5vw));
     background-color: #4e523c;
-    border-radius: 10px 30px 20px 40px;
     /* border: 2px solid yellow; */
 }
 
@@ -246,7 +243,6 @@ html, body {
     bottom: 40%;
     right: clamp(calc(50vw + 180px), calc(60vw), calc(50vw + 300px - 5vw));
     background-color: #5d643e;
-    border-radius: 10px 30px 20px 40px;
     /* border: 2px solid yellow; */
 }
 

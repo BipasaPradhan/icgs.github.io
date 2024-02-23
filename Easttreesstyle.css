@@ -4,7 +4,7 @@ html, body{
     flex-direction: column;
     height: 100vh;
     width: 100%; 
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: auto;
   }
   .mainBox{
