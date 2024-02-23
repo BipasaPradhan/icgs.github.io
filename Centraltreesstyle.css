@@ -83,7 +83,7 @@ html, body{
       font-size: 16px;
     }
     .navBar a:hover{
-     background-color: #2D351D;
+     background-color:  #5f723d;
     }
     .donateButton {
       background-color:#CFD9CE;
@@ -146,5 +146,5 @@ html, body{
     align-items: center;
   }
   .Treecontent a:hover {
-    background-color:  #2D351D;
+    background-color:#5f723d;
   }

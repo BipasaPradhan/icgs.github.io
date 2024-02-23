@@ -1,4 +1,4 @@
-html, body {
+  html, body {
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -40,6 +40,14 @@ html, body {
     white-space: nowrap;
   }
   
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D0F08;
+    color: white;
+    height: 69px;
+  }
   .navText {
     color: white;
     font-family: "Yeseva One";
@@ -49,43 +57,24 @@ html, body {
     padding: 0;
     margin-right: auto;
   }
-  
-  .navBar { /* main design for the nav bar */
-    background-color: #0D0F08;
-    list-style-type: none;
-    padding: 0;
+  .navlinks ul {
     margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100vw;
-    z-index: 1000;
-  }
-  
-  .navBar ul {   /* designates how the nav bar will look */
-    height: 35px;
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    list-style: none;
     padding: 0;
+    display: flex;
+    align-items: center;
   }
-  
-  .navBar a { /* designates how the nav bar text will look */
+  .navlinks li {
+    list-style: none;
+  }
+  .navlinks li a {
+    display: block;
     color: white;
     text-decoration: none;
     padding: 1rem;
-    display: block;
-    text-align: center;
     font-family: "Thasadith";
     font-size: 16px;
     white-space: nowrap;
   }
-  
-  .navBar a:hover { /* hovering effect for nav bar */
-    background-color: #3f4b28;
-  }
-  
   .donateButton {
     background-color: #CFD9CE;
     color: black;
@@ -96,19 +85,35 @@ html, body {
     font-family: "Thasadith";
     font-size: 16px;
     margin-right: 25px;
-    margin-left: 14px;
+    margin-left: 15px;
   }
-  
-  .navBar button:hover { /* hovering effect for donate button */
+  .navlinks li a:hover {
+    background-color: #5f723d;
+  }
+  .navlinks button:hover { /* hovering effect for donate button */
     background-color: #F3FFF2;
   }
-  
-  .TreeDropdown { /* start of dropdown menu */
-    position: relative;
-    z-index: 2;
+  .toggle-button {
+    position: absolute;
+    top: 53px;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  .toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .TreeDropdown {
+    position: relative; /* Make the parent of the dropdown menu relative */
   }
   
-  .Treecontent { /* main drop down design */
+  .Treecontent {
     display: none;
     position: absolute;
     width: max-content;
@@ -117,7 +122,6 @@ html, body {
     left: 0;
     top: 100%;
   }
-  
   .TreeDropdown:hover .Treecontent { /* how the drop down will look when you hover over it */
     display: block;
   }
@@ -143,7 +147,62 @@ html, body {
   }
   
   .dropdown-menu li a:hover {
-    background-color: #3f4b28;
+    background-color:#5f723d;
+  }
+  
+  @media only screen and (max-width:1000px) {
+    .toggle-button {
+        display: flex;
+    }
+    .navlinks {
+        display: none;
+    }
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        padding: .5rem;
+    }
+    .navlinks ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navlinks li {
+        text-align: center;
+    }
+    .donateButton {
+        display: none;
+    }
+    .navBar:hover .navlinks {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        width: 100%; 
+    }
+    .navlinks li:hover {
+        width: 100%;
+    }
+    .navlinks li a {
+        padding: .8rem 1rem;
+    }
+    .Treecontent {
+        display: none;
+        position: absolute;
+        width: max-content;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+        left: 0;
+        top: 100%;
+    }
+    .TreeDropdown:hover .Treecontent {
+        display: none;
+    }
+    .icon {
+        display: none;
+    }
+    .navlinks.active {
+        display: flex;
+    }
   }
 
 .contacts {
