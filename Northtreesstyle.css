@@ -11,7 +11,7 @@ html, body {
 .mainBox {      /* I have made the main box as the main container of every other boxes */
   width: 100%;
   height: 100vh;
-  background-color: #5E663F;
+  background-color: #2D351D;
   overflow-y: auto;
   overflow-x: hidden;
   position: relative;
@@ -141,4 +141,190 @@ html, body {
 
 .dropdown-menu li a:hover {
   background-color: #3f4b28;
+}
+.mainbody {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.introduction {
+  position: relative;
+  background-color: #CFD9CE;
+  width: 80vw;
+  height: fit-content;
+  text-align: center;
+  margin-top: 70px;
+}
+.introduction p {
+  padding: 50px;
+  font-family: "Montserrat";
+  line-height: 1.65;
+  font-size: 21px;
+}
+.introduction strong {
+  color: #202d09;
+}
+.ButeaMonosperma, .MammeaSiamensis, .TectonaGrandis {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.photoB {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 700px;
+  height: auto;
+  background-image: url(images/ButeaMonosperma.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-left: 55px;
+  margin-top: 100px;
+  margin-bottom: 45px;
+  border: 4px solid #ECEDE2;
+}
+.informationB {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  margin-top: 100px;
+  margin-bottom: 45px;
+  padding: 0 55px; 
+  /** border: 2px solid orange; **/
+}
+.creditsB {
+  font-family: "Montserrat";
+  font-size: 12px;
+  color: white;
+  bottom: 0;
+  top: 0;
+}
+.creditsB a {
+  color: white;
+  text-decoration: none;
+}
+.nameB, .nameM, .nameT{
+  font-family: "Bugaki";
+  background-color: #ECEDE2;
+  width: fit-content;
+  height: fit-content;
+  padding: 15px;
+  font-size: 25px;
+  margin: 0 auto;
+}
+.maininfoB, .maininfoM, .maininfoT {
+  margin-top: 30px;
+  text-align: start;
+  font-family: "Montserrat";
+  font-size: 17px;
+  line-height: 2.5;
+  color: white;
+  /** border: 2px solid red; **/
+}
+.ThainameB, .ThainameM, .ThainameT {
+  line-height: 2.5;
+}
+.ecologicalnicheB, .ecologicalnicheM, .ecologicalnicheT {
+  line-height: 1.5;
+}
+.maininfoB strong, .maininfoM strong, .maininfoT strong {
+  font-size: 19px;
+}
+
+.photoM, .photoT {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 700px;
+  height: auto;
+  background-color: white;
+  margin-left: 55px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+.informationM, .informationT {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  padding: 0 55px; 
+  /** border: 2px solid orange; **/
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .mainbody {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .introduction {
+    position: relative;
+    background-color: #CFD9CE;
+    width: 80vw;
+    height: fit-content;
+    margin-top: 55px;
+  }
+  .introduction p {
+    padding: 15px 30px;
+    font-family: "Montserrat";
+    line-height: 1.65;
+    font-size: 19px;
+  }
+  .introduction strong {
+    color: #202d09;
+  }
+  .ButeaMonosperma, .MammeaSiamensis, .TectonaGrandis {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .photoB, .photoM, .photoT {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    height: 330px;
+    background-color: white;
+  }
+  .informationB, .informationM {
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .maininfoB, .maininfoM, .maininfoT {
+    text-align: center;
+  }
+
+  .informationT {
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .photoB, .photoM, .photoT {
+    width: 800px;
+  }
 }

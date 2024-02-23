@@ -11,12 +11,10 @@ html, body {
   .mainBox {      /* I have made the main box as the main container of every other boxes */
     width: 100%;
     height: 100vh;
-    background-color: #2D351D;
+    background-color: #5E663F;
     overflow-y: auto;
     overflow-x: hidden;
     position: relative;
-    justify-content: center;
-    align-items: center;
   }
   
   .titleBox {
@@ -105,7 +103,6 @@ html, body {
   
   .TreeDropdown { /* start of dropdown menu */
     position: relative;
-    z-index: 2;
   }
   
   .Treecontent { /* main drop down design */
@@ -145,130 +142,3 @@ html, body {
   .dropdown-menu li a:hover {
     background-color: #3f4b28;
   }
-
-.contacts {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-}
-.contactB, .contactPa, .contactPe {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: fit-content;
-  margin-top: 25vh;
-}
-.contactB, .contactPe {
-  margin-left: 70px;
-  margin-right: 70px;
-}
-.nameB, .namePa, .namePe {
-  position: absolute; 
-  top: -20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 10px;
-  background-color: #869483;
-  width: fit-content;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: "Alice";
-  z-index: 1; 
-}
-.roleB, .rolePa, .rolePe {
-  font-size: 15px;
-  color: #1e2510;
-  text-decoration: underline;
-  text-align: center;
-  margin-top: 5px;
-}
-.infoB, .infoPa, .infoPe {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 15px;
-  font-size: 17px;
-  background-color: #dbdbc4;
-  width: fit-content;
-  height: fit-content;
-  font-family: "Noto Serif Georgian";
-}
-.gmail-container, .gmail-containerPa, .gmail-containerPe {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  margin-top: 20px;
-}
-.gmail-text, .gmail-textPa, .gmail-textPe, .linkedin-text, .linkedin-textPa, .linkedin-textPe, .instagram-text, .instagram-textPa, .instagram-textPe
-{
-  margin-left: 10px;
-  text-decoration: none;
-  color: #3e4d1c;
-}
-.linkedin-container, .linkedin-containerPa, .linkedin-containerPe {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.instagram-container, .instagram-containerPa, .instagram-containerPe {
-  display: flex;
-  align-items: center;
-}
-.gmail-container::after, .gmail-containerPa::after, .gmail-containerPe::after { 
-  content: "";
-  position: absolute;
-  width: 100%;
-  left: 0;
-  height: 2px;
-  background-color: black;
-  bottom: 124.4px;
-}
-.linkedin-container::after, .linkedin-containerPa::after, .linkedin-containerPe::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  left: 0;
-  height: 2px;
-  background-color: black;
-  bottom: 66.6px
-  }
-
-@media only screen and (min-width: 1300px) {
-    .contactB, .contactPa, .contactPe {
-      margin-top: 30vh;
-    }
-    .nameB, .namePa, .namePe {
-      font-size: 25px;
-    }
-    .infoB, .infoPa, .infoPe {
-      font-size: 21px;
-    }
-    .roleB, .rolePa, .rolePe {
-      font-size: 19px;
-    }
-    .gmail-container, .gmail-containerPa, .gmail-containerPe {
-      margin-top: 35px;
-    }
-}
-@media only screen and (max-width: 1000px) {
-  .contacts {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
-  .contactB, .contactPe, .contactPa {
-    margin-top: 100px;
-  }
-}

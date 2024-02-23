@@ -212,4 +212,14 @@ html, body {
   color: #5F8720;
   font-weight: bold;
 }
+.credits {
+  color: white;
+  font-family: "Montserrat";
+  font-size: 14px;
+  margin: 10px;
+}
+.credits a {
+  color: white;
+  text-decoration: none;
+}
 
