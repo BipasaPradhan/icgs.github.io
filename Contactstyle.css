@@ -111,6 +111,7 @@
   }
   .TreeDropdown {
     position: relative; /* Make the parent of the dropdown menu relative */
+    z-index: 2;
   }
   
   .Treecontent {
