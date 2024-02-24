@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="oldstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/476dc17da0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Thasadith&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/bugaki" rel="stylesheet">
+    <title>Tales of Siam</title>
+</head>
+<body>
+    <div class="mainBox">
+        <div class="titleBox">
+            <p>Tales of Siam: Stories From the Heart of the Forest</p>
+        </div>
+        <nav class="navBar">
+            <div class="navText">Trees</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="TreeDropdown">  
+                        <a href="treeshome.html">Trees <span class="icon">&#9662;</span></a>
+                        <div class="Treecontent">
+                            <ul class="dropdown-menu">
+                                <li><a href="Northtrees.html">The Northern Region</a></li>
+                                <li><a href="Southtrees.html">The Southern Region</a></li>
+                                <li><a href="Easttrees.html">The Eastern Region</a></li>
+                                <li><a href="Centraltrees.html">The Central Region</a></li>
+                            </ul>
+                        </div>
+                    </li>                    
+                    <li><a href="references.html">References</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><button onclick="window.location.href='donate.html'" class="donateButton">Donate</button></li>
+                </ul>
+            </div>
+        </nav>
+        <script>
+            const toggleButton = document.getElementsByClassName(".toggle-button")[0];
+            const navLinks = document.querySelector(".navlinks")[0];
+            toggleButton.addEventListener('click', () => {
+                navLinks.classList.toggle('active')
+            })
+        </script>
+        <div class="mainbody"> <!--main div for the body -->
+            <div class="introduction"> <!--intro part -->
+                <div class="introductiontext">
+                    <p>
+                        Tree species found in each region are highly dependent on soil type and moisture. Soils in Northern Thailand are mostly very acidic. There are many forested areas where soils are rich in organic matter. Some common soils found in the region are <u>Reddish Soil</u>, <u>Sandy Soil</u>, <u>Mountainous Soil</u>, and many more. Because of this, the main types of trees that grow in this region are <strong>evergreen</strong> and <strong>deciduous</strong>.    
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
 
