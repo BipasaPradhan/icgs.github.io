@@ -3,40 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="Centraltreesstyle.css">
+    <link rel="stylesheet" type="text/css" href="Northtreesstyle.css">
+    <link rel="stylesheet" type="text/css" href="Centraltreesstyle.css"> <!--For additional customizations-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/476dc17da0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Thasadith&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/bugaki" rel="stylesheet">
     <title>Tales of Siam</title>
 </head>
 <body>
-    <div class="mainBox">
+    <div class="mainBox" style="background-color: #d0d9cd;">
         <div class="titleBox">
             <p>Tales of Siam: Stories From the Heart of the Forest</p>
         </div>
-        <div class="navContainer">
-            <nav class="navBar">
-                <div class="navText">The Central Region</div>
+        <nav class="navBar">
+            <div class="navText">The Central Region</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navlinks">
                 <ul>
                     <li><a href="Homepage.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li class="TreeDropdown">
-                        <a href="treeshome.html">Trees &#9662</a>
+                    <li class="TreeDropdown">  
+                        <a href="treeshome.html">Trees <span class="icon">&#9662;</span></a>
                         <div class="Treecontent">
-                            <ul>
+                            <ul class="dropdown-menu">
                                 <li><a href="Northtrees.html">The Northern Region</a></li>
                                 <li><a href="Southtrees.html">The Southern Region</a></li>
                                 <li><a href="Easttrees.html">The Eastern Region</a></li>
                                 <li><a href="Centraltrees.html">The Central Region</a></li>
                             </ul>
                         </div>
-                    </li>
+                    </li>                    
+                    <li><a href="references.html">References</a></li>
                     <li><a href="Contact.html">Contact Us</a></li>
                     <li><button onclick="window.location.href='donate.html'" class="donateButton">Donate</button></li>
                 </ul>
-            </nav>
+            </div>
+        </nav>
+        <script>
+            const toggleButton = document.getElementsByClassName(".toggle-button")[0];
+            const navLinks = document.querySelector(".navlinks")[0];
+            toggleButton.addEventListener('click', () => {
+                navLinks.classList.toggle('active')
+            })
+        </script>
+        <div class="mainbody"> <!--main div for the body -->
+            <div class="introduction" style="width: 50vw; background-color: #2d351d;"> <!--intro part -->
+                <div class="introductiontext">
+                <p style="color:white;">
+                    In southern Thailand there are many areas that are <strong style="color:white;">tropical</strong>. Some soils that are commonly found are 
+                    <strong style="color:white;">Lateritic soil</strong>, <strong style="color:white;">Alluvial soil</strong>, and <strong style="color:white;">Peat soil</strong>.
+                </p>
+                </div>
+            </div>
+            <div class="ButeaMonosperma"> <!--main div for 1st tree -->
+                <div class="photoMT"> <!--pic of tree -->
+                </div>
+                <div class="informationB"> <!--div for tree info -->
+                    <div class="nameB" style="background-color: #747f71;"> <!--scientific name -->
+                        Mangrove Trees
+                    </div>
+                    <div class="maininfoB" style="color:black;"> <!--actual info -->
+                        <u><strong>Common Name:</strong></u><br>
+                        <span>Mangrove</span><br>
+                        <div class="ThainameB"style="color:black;">
+                            <u><strong>Thai Name:</strong></u><br>
+                            <span>Ton Kong Kang (ต้นโกงกาง)</span><br>
+                        </div>
+                        <u><strong>Ecological Niche:</strong></u>
+                        <div class="ecologicalnicheB"style="color:black;">
+                            <span> A mangrove is a shrub or tree that grows mainly in coastal saline or brackish water. Mangroves grow in an equatorial climate, typically along coastlines and tidal rivers. Mostly found in Asia such as Indonesia, Thailand, and Malaysia. </span><br>
+                            <p class="creditsB"style="color:black;">(Photo by <a href="https://unsplash.com/@pune134?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"style="color:black;">Prasongsom Punyauppa-path</a> on <a style="color:black;"href="https://unsplash.com/photos/a-close-up-of-a-tree-with-orange-flowers-JU320pJc3HU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash)</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="MammeaSiamensis"> 
+                <div class="photoD">
+    
+                </div>
+                <div class="informationM">
+                    <div class="nameM"style="color:black;background-color: #747f71;">
+                        Durio
+                    </div>
+                    <div class="maininfoM"style="color:black;">
+                        <u><strong>Common Name:</strong></u><br>
+                        <span>Durian Tree </span><br>
+                        <div class="ThainameM">
+                            <u><strong>Thai Name:</strong></u><br>
+                            <span>Ton Turian (ต้นทุเรียน)</span><br>
+                        </div>
+                        <u><strong>Ecological Niche:</strong></u>
+                        <div class="ecologicalnicheM">
+                            <span>Durian cultivation thrives in tropical areas, ceasing growth when average daily temperatures fall below 22°C (72°F). The fruit is native to Southeast Asia and is commonly found in countries like Malaysia, Thailand, Indonesia, and the Philippines. Durian is often called the “king of fruits” in Southeast Asia due to its popularity and rich nutritions. Can be found in Malaysia, Thailand, Indonesia, and the Philippines. 
+                            </span>
+                            <p class="creditsM"style="color:black;">(Inflorescence(s), Photographer: Weis, B.)</p>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="TectonaGrandis">
+                <div class="photoC">
+    
+                </div>
+                <div class="informationT">
+                    <div class="nameT"style="color:black;background-color: #747f71;">
+                        Cocos nucifera
+                    </div>
+                    <div class="maininfoT"style="color:black;">
+                        <u><strong>Common Name:</strong></u><br>
+                        <span>Coconut Palm</span><br>
+                        <div class="ThainameT">
+                            <u><strong>Thai Name:</strong></u><br>
+                            <span>Ton Maprow (ต้นมะพร้าว)</span><br>
+                        </div>
+                        <u><strong>Ecological Niche:</strong></u>
+                        <div class="ecologicalnicheT">
+                            <span>Coconut palms flourish best close to the sea in low-lying areas a few feet above high water where there is circulating groundwater and ample rainfall. Coconut palms grow and crop best in a hot climate environment and the tree should get plenty of sunlight. Mostly found in Tropical coastal areas. </span>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+
         </div>
+    </div>
+</body>
+</html>

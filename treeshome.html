@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tales of Siam</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,140 +20,143 @@
     <script src="https://kit.fontawesome.com/476dc17da0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="titleBox">
-        <p>Tales of Siam: Stories From the Heart of the Forest</p>
-    </div>
-    <nav class="navBar">
-        <div class="navText">The Northern Region</div>
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navlinks">
-            <ul>
-                <li><a href="Homepage.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="TreeDropdown">  
-                    <a href="treeshome.html">Trees <span class="icon">&#9662;</span></a>
-                    <div class="Treecontent">
-                        <ul class="dropdown-menu">
-                            <li><a href="Northtrees.html">The Northern Region</a></li>
-                            <li><a href="Southtrees.html">The Southern Region</a></li>
-                            <li><a href="Easttrees.html">The Eastern Region</a></li>
-                            <li><a href="Centraltrees.html">The Central Region</a></li>
-                        </ul>
-                    </div>
-                </li>                    
-                <li><a href="references.html">References</a></li>
-                <li><a href="Contact.html">Contact Us</a></li>
-                <li><button onclick="window.location.href='donate.html'" class="donateButton">Donate</button></li>
-            </ul>
+    <div class="mainBox">
+        <div class="titleBox">
+            <p>Tales of Siam: Stories From the Heart of the Forest</p>
         </div>
-    </nav>
-    <script>
-        const toggleButton = document.getElementsByClassName(".toggle-button")[0];
-        const navLinks = document.querySelector(".navlinks")[0];
-        toggleButton.addEventListener('click', () => {
-            navLinks.classList.toggle('active')
-        })
-    </script>
-    <div id="mainBox">
+        <nav class="navBar">
+            <div class="navText">Trees</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="TreeDropdown">  
+                        <a href="treeshome.html">Trees <span class="icon">&#9662;</span></a>
+                        <div class="Treecontent">
+                            <ul class="dropdown-menu">
+                                <li><a href="Northtrees.html">The Northern Region</a></li>
+                                <li><a href="Southtrees.html">The Southern Region</a></li>
+                                <li><a href="Easttrees.html">The Eastern Region</a></li>
+                                <li><a href="Centraltrees.html">The Central Region</a></li>
+                            </ul>
+                        </div>
+                    </li>                    
+                    <li><a href="references.html">References</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><button onclick="window.location.href='donate.html'" class="donateButton">Donate</button></li>
+                </ul>
+            </div>
+        </nav>
         <script>
-            function fadeIn(el) {
-                var opacity = 0; // Initial opacity
-                var interval = setInterval(function() {
-                    if (opacity < 1.0) {
-                        opacity += 0.1;
-                        el.style.opacity = opacity;
-                    } else {
-                        clearInterval(interval); // Stop the interval when opacity reaches 0
-                    }
-                }, 15);
-            }
-            function fadeOut(el) {
-                var opacity = 1; // Initial opacity
-                var interval = setInterval(function() {
-                    if (opacity > 0) {
-                        opacity -= 0.1;
-                        el.style.opacity = opacity;
-                    } else {
-                        clearInterval(interval); // Stop the interval when opacity reaches 0
-                    }
-                }, 15);
-            }
+            const toggleButton = document.getElementsByClassName(".toggle-button")[0];
+            const navLinks = document.querySelector(".navlinks")[0];
+            toggleButton.addEventListener('click', () => {
+                navLinks.classList.toggle('active')
+            })
         </script>
-        <div id="text1">
-            <p>
-                Each region in Thailand has its own kinds of trees. Click on a region to begin your exploration!
-            </p>
-        </div>
-        <div id="map">
-            <a href="Centraltrees.html"><div id="central"></div></a> <!--TODO: Add link for central and south (replace the #)-->
-            <a href="Easttrees.html"><div id="east"></div></a>
-            <a href="Northtrees.html"><div id="north"></div></a>
-            <a href="Southtrees.html"><div id="south"></div></a>
-        </div>
-        <div id="eastregion">
             <script>
-                const eastElement = document.getElementById("eastregion");
-                const east = document.getElementById("east");
-                east.addEventListener("mouseover", (east)=>{
-                    fadeIn(eastElement);
-                })
-                east.addEventListener("mouseout", ()=>{
-                    fadeOut(eastElement);
-                })
+                function fadeIn(el) {
+                    var opacity = 0; // Initial opacity
+                    var interval = setInterval(function() {
+                        if (opacity < 1.0) {
+                            opacity += 0.1;
+                            el.style.opacity = opacity;
+                        } else {
+                            clearInterval(interval); // Stop the interval when opacity reaches 0
+                        }
+                    }, 15);
+                }
+                function fadeOut(el) {
+                    var opacity = 1; // Initial opacity
+                    var interval = setInterval(function() {
+                        if (opacity > 0) {
+                            opacity -= 0.1;
+                            el.style.opacity = opacity;
+                        } else {
+                            clearInterval(interval); // Stop the interval when opacity reaches 0
+                        }
+                    }, 15);
+                }
             </script>
-            <h3>
-                Eastern Region
-            </h3>
-        </div>
-        <div id="southregion">
-            <script>
-                const southElement = document.getElementById("southregion");
-                const south = document.getElementById("south");
-                south.addEventListener("mouseover", ()=>{
-                    fadeIn(southElement);
-                })
-                south.addEventListener("mouseout", ()=>{
-                    fadeOut(southElement);
-                })
-            </script>
-            <h3>
-                Southern Region
-            </h3>
-        </div>
-        <div id="northregion">
-            <script>
-                const northElement = document.getElementById("northregion");
-                const north = document.getElementById("north");
-                north.addEventListener("mouseover", ()=>{
-                    fadeIn(northElement);
-                })
-                north.addEventListener("mouseout", ()=>{
-                    fadeOut(northElement);
-                })
-            </script>
-            <h3>
-                Northern Region
-            </h3>
-        </div>
-        <div id="centralregion">
-            <script>
-                const centralElement = document.getElementById("centralregion");
-                const central = document.getElementById("central");
-                central.addEventListener("mouseover", ()=>{
-                    fadeIn(centralElement);
-                })
-                central.addEventListener("mouseout", ()=>{
-                    fadeOut(centralElement);
-                })
-            </script>
-            <h3>
-                Central Region
-            </h3>
-        </div>
+            <div class="mainbody"> <!--main div for the body -->
+                <div class="introduction"> <!--intro part -->
+                    <div class="introductiontext">
+                        <p>
+                            Each region in Thailand has its own kinds of trees. Click on a region to begin your exploration!
+                        </p>
+                    </div>
+                </div>
+                <!-- <div id="map">
+                    <a href="Centraltrees.html" style="width:100%; border:5px solid green;"><div id="central"></div></a>
+                    <a href="Easttrees.html"><div id="east"></div></a>
+                    <a href="Northtrees.html"><div id="north"></div></a>
+                    <a href="Southtrees.html"><div id="south"></div></a>
+                </div> -->
+            <!-- <div id="eastregion">
+                <script>
+                    const eastElement = document.getElementById("eastregion");
+                    const east = document.getElementById("east");
+                    east.addEventListener("mouseover", (east)=>{
+                        fadeIn(eastElement);
+                    })
+                    east.addEventListener("mouseout", ()=>{
+                        fadeOut(eastElement);
+                    })
+                </script>
+                <h3>
+                    Eastern Region
+                </h3>
+            </div>
+            <div id="southregion">
+                <script>
+                    const southElement = document.getElementById("southregion");
+                    const south = document.getElementById("south");
+                    south.addEventListener("mouseover", ()=>{
+                        fadeIn(southElement);
+                    })
+                    south.addEventListener("mouseout", ()=>{
+                        fadeOut(southElement);
+                    })
+                </script>
+                <h3>
+                    Southern Region
+                </h3>
+            </div>
+            <div id="northregion">
+                <script>
+                    const northElement = document.getElementById("northregion");
+                    const north = document.getElementById("north");
+                    north.addEventListener("mouseover", ()=>{
+                        fadeIn(northElement);
+                    })
+                    north.addEventListener("mouseout", ()=>{
+                        fadeOut(northElement);
+                    })
+                </script>
+                <h3>
+                    Northern Region
+                </h3>
+            </div>
+            <div id="centralregion">
+                <script>
+                    const centralElement = document.getElementById("centralregion");
+                    const central = document.getElementById("central");
+                    central.addEventListener("mouseover", ()=>{
+                        fadeIn(centralElement);
+                    })
+                    central.addEventListener("mouseout", ()=>{
+                        fadeOut(centralElement);
+                    })
+                </script>
+                <h3>
+                    Central Region
+                </h3>
+            </div> -->
     </div>
 </body>
 </html>
