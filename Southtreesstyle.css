@@ -1,247 +1,10 @@
-html, body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.mainBox {      /* I have made the main box as the main container of every other boxes */
-  width: 100%;
-  height: 100vh;
-  background-color: #d0d9cd;
-  overflow-y: auto;
-  overflow-x: hidden;
-  position: relative;
-}
-
-.titleBox {
-  background-color: #747F71;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 28px;
-  width: 100vw;
-  font-style: normal;
-  font-family: "Josefin Sans";
-  font-weight: 400;
-  font-size: 15px;
-  text-align: center;
-  top: 0;
-}
-
-.titleBox p {
-  color: white;
-  margin: 0;
-  white-space: nowrap;
-}
-
-.navBar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #0D0F08;
-  color: white;
-  height: 69px;
-}
-.navText {
-  color: white;
-  font-family: "Yeseva One";
-  font-size: 45px;
-  margin-left: 29px;
-  white-space: nowrap;
-  padding: 0;
-  margin-right: auto;
-}
-.navlinks ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-}
-.navlinks li {
-  list-style: none;
-}
-.navlinks li a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 1rem;
-  font-family: "Thasadith";
-  font-size: 16px;
-  white-space: nowrap;
-}
-.donateButton {
-  background-color: #CFD9CE;
-  color: black;
-  padding: 8px;
-  border: none;
-  cursor: pointer;
-  font-weight: 600;
-  font-family: "Thasadith";
-  font-size: 16px;
-  margin-right: 25px;
-  margin-left: 15px;
-}
-.navlinks li a:hover {
-  background-color: #5f723d;
-}
-.navlinks button:hover { /* hovering effect for donate button */
-  background-color: #F3FFF2;
-}
-.toggle-button {
-  position: absolute;
-  top: 53px;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
-.toggle-button .bar {
-  height: 4px;
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
-}
-.TreeDropdown {
-  position: relative; /* Make the parent of the dropdown menu relative */
-}
-
-.Treecontent {
-  display: none;
-  position: absolute;
-  width: max-content;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  z-index: 1;
-  left: 0;
-  top: 100%;
-}
-.TreeDropdown:hover .Treecontent { /* how the drop down will look when you hover over it */
-  display: block;
-}
-
-.dropdown-menu { /* how the contents in the dropdowm will look */
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.dropdown-menu li { /* how the boxes of the menu will look */
-  padding: 6px;
-  background-color: #0D0F08;
-  width: 100%;
-}
-
-.dropdown-menu li a { /* dropdown box text */
-  text-decoration: none;
-  color: white;
-  display: block;
-}
-
-.dropdown-menu li a:hover {
-  background-color:#5f723d;
-}
-
-@media only screen and (max-width:1000px) {
-  .toggle-button {
-      display: flex;
-  }
-  .navlinks {
-      display: none;
-  }
-  .navBar {
-      flex-direction: column;
-      align-items: center;
-      height: fit-content;
-      padding: .5rem;
-  }
-  .navlinks ul {
-      width: 100%;
-      flex-direction: column;
-  }
-  .navlinks li {
-      text-align: center;
-  }
-  .donateButton {
-      display: none;
-  }
-  .navBar:hover .navlinks {
-      display: flex; 
-      flex-direction: column;
-      align-items: center;
-      width: 100%; 
-  }
-  .navlinks li:hover {
-      width: 100%;
-  }
-  .navlinks li a {
-      padding: .8rem 1rem;
-  }
-  .Treecontent {
-      display: none;
-      position: absolute;
-      width: max-content;
-      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-      z-index: 1;
-      left: 0;
-      top: 100%;
-  }
-  .TreeDropdown:hover .Treecontent {
-      display: none;
-  }
-  .icon {
-      display: none;
-  }
-  .navlinks.active {
-      display: flex;
-  }
-}
-
-
-.mainbody {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.introduction {
-  position: relative;
-  background-color: #CFD9CE;
-  width: 80vw;
-  height: fit-content;
-  text-align: center;
-  margin-top: 70px;
-}
-.introduction p {
-  padding: 50px;
-  font-family: "Montserrat";
-  line-height: 1.65;
-  font-size: 21px;
-}
-.introduction strong {
-  color: #202d09;
-}
-.ButeaMonosperma, .MammeaSiamensis, .TectonaGrandis {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-.photoB {
+.photoMT {
   align-items: center;
   justify-content: center;
   text-align: center;
   width: 700px;
   height: auto;
-  background-image: url(images/ButeaMonosperma.jpg);
+  /* background-image: url(images/ButeaMonosperma.jpg); */
   background-position: center;
   background-size: cover;
   margin-left: 55px;
@@ -249,144 +12,33 @@ html, body {
   margin-bottom: 45px;
   border: 4px solid #ECEDE2;
 }
-.informationB {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: fit-content;
-  margin-top: 100px;
-  margin-bottom: 45px;
-  padding: 0 55px; 
-  /** border: 2px solid orange; **/
-}
-.creditsB {
-  font-family: "Montserrat";
-  font-size: 12px;
-  color: white;
-  bottom: 0;
-  top: 0;
-}
-.creditsB a {
-  color: white;
-  text-decoration: none;
-}
-.nameB, .nameM, .nameT{
-  font-family: "Bugaki";
-  background-color: #ECEDE2;
-  width: fit-content;
-  height: fit-content;
-  padding: 15px;
-  font-size: 25px;
-  margin: 0 auto;
-}
-.maininfoB, .maininfoM, .maininfoT {
-  margin-top: 30px;
-  text-align: start;
-  font-family: "Montserrat";
-  font-size: 17px;
-  line-height: 2.5;
-  color: white;
-  /** border: 2px solid red; **/
-}
-.ThainameB, .ThainameM, .ThainameT {
-  line-height: 2.5;
-}
-.ecologicalnicheB, .ecologicalnicheM, .ecologicalnicheT {
-  line-height: 1.5;
-}
-.maininfoB strong, .maininfoM strong, .maininfoT strong {
-  font-size: 19px;
-}
 
-.photoM, .photoT {
+.photoD {
   align-items: center;
   justify-content: center;
   text-align: center;
   width: 700px;
   height: auto;
-  background-color: white;
+  /* background-image: url(images/ButeaMonosperma.jpg); */
+  background-position: center;
+  background-size: cover;
   margin-left: 55px;
-  margin-top: 45px;
+  margin-top: 100px;
   margin-bottom: 45px;
+  border: 4px solid #ECEDE2;
 }
-.informationM, .informationT {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: fit-content;
-  margin-top: 45px;
+
+.photoC {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 700px;
+  height: auto;
+  /* background-image: url(images/ButeaMonosperma.jpg); */
+  background-position: center;
+  background-size: cover;
+  margin-left: 55px;
+  margin-top: 100px;
   margin-bottom: 45px;
-  padding: 0 55px; 
-  /** border: 2px solid orange; **/
-}
-
-
-@media only screen and (max-width: 1000px) {
-  .mainbody {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  .introduction {
-    position: relative;
-    background-color: #CFD9CE;
-    width: 80vw;
-    height: fit-content;
-    margin-top: 55px;
-  }
-  .introduction p {
-    padding: 15px 30px;
-    font-family: "Montserrat";
-    line-height: 1.65;
-    font-size: 19px;
-  }
-  .introduction strong {
-    color: #202d09;
-  }
-  .ButeaMonosperma, .MammeaSiamensis, .TectonaGrandis {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .photoB, .photoM, .photoT {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70vw;
-    height: 330px;
-    background-color: white;
-  }
-  .informationB, .informationM {
-    width: 70%;
-    margin: auto;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .maininfoB, .maininfoM, .maininfoT {
-    text-align: center;
-  }
-
-  .informationT {
-    width: 70%;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-}
-@media only screen and (min-width: 1300px) {
-  .photoB, .photoM, .photoT {
-    width: 800px;
-  }
+  border: 4px solid #ECEDE2;
 }
