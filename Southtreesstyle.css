@@ -4,13 +4,13 @@
   text-align: center;
   width: 700px;
   height: auto;
-  /* background-image: url(images/ButeaMonosperma.jpg); */
+  background-image: url(images/Rhizophora_mangle.jpg);
   background-position: center;
   background-size: cover;
   margin-left: 55px;
   margin-top: 100px;
   margin-bottom: 45px;
-  border: 4px solid #ECEDE2;
+  border: 4px solid #2d351d;
 }
 
 .photoD {
@@ -19,13 +19,13 @@
   text-align: center;
   width: 700px;
   height: auto;
-  /* background-image: url(images/ButeaMonosperma.jpg); */
+  background-image: url(images/Ripe_Durian_Tree_in_Samosir_Island_02.jpg);
   background-position: center;
   background-size: cover;
   margin-left: 55px;
   margin-top: 100px;
   margin-bottom: 45px;
-  border: 4px solid #ECEDE2;
+  border: 4px solid #2d351d;
 }
 
 .photoC {
@@ -34,11 +34,21 @@
   text-align: center;
   width: 700px;
   height: auto;
-  /* background-image: url(images/ButeaMonosperma.jpg); */
+  background-image: url(images/Cocos_nucifera_crown.jpg);
   background-position: center;
   background-size: cover;
   margin-left: 55px;
   margin-top: 100px;
   margin-bottom: 45px;
-  border: 4px solid #ECEDE2;
+  border: 4px solid #2d351d;
+}
+
+@media only screen and (max-width: 1000px) {
+  .photoMT, .photoD, .photoC {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    height: 330px;
+    background-color: white;
+  }
 }
