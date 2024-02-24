@@ -69,7 +69,11 @@ html, body {
     background-color: hsl(110, 8%, 57%);
     /* border: 2px solid brown; */
 }
-
+@media only screen and (max-width:1000px) {
+    #text1 {
+        display:none;
+    }
+}
 #central {
     position: relative;
     height: 240px;
@@ -138,11 +142,10 @@ html, body {
 
 #eastregion {
     position: absolute;
-    display: flex;
+    display: grid;
     opacity: 0;
     justify-content: center;
     text-align: center;
-    align-items: center;
     padding: 0%;
     font-size: clamp(16px, 2vw,32px);
     font-style:normal;
@@ -152,11 +155,29 @@ html, body {
     top: 30%;
     left: clamp(calc(50vw + 230px), calc(60vw), calc(50vw + 300px - 5vw));
     background-color: #2e361e;
-    /* border: 2px solid yellow; */
+    border: 2px solid yellow;
 }
 
 #eastregion h3 {
     color: #D0D9CD;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#description {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0%;
+    font-size: clamp(16px, 2vw,32px);
+    font-style:normal;
+    font-family: "Noto Serif Georgian";
+    width: clamp(100px, 23vw, 500px);
+    height: auto;
+    border: 2px solid orange;
 }
 
 #southregion {

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="donate-style.css">
+    <link rel="stylesheet" type="text/css" href="Northtreesstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -18,29 +19,41 @@
         <div class="titleBox">
             <p>Tales of Siam: Stories From the Heart of the Forest</p>
         </div>
-        <div class="navContainer">
-            <nav class="navBar">
-                <div class="navText">Donate Now!</div>
+        <nav class="navBar">
+            <div class="navText">The Northern Region</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navlinks">
                 <ul>
                     <li><a href="Homepage.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li class="TreeDropdown">
-                        <a href="treeshome.html">Trees &#9662</a>
+                    <li class="TreeDropdown">  
+                        <a href="treeshome.html">Trees <span class="icon">&#9662;</span></a>
                         <div class="Treecontent">
-                            <ul>
+                            <ul class="dropdown-menu">
                                 <li><a href="Northtrees.html">The Northern Region</a></li>
                                 <li><a href="Southtrees.html">The Southern Region</a></li>
                                 <li><a href="Easttrees.html">The Eastern Region</a></li>
                                 <li><a href="Centraltrees.html">The Central Region</a></li>
                             </ul>
                         </div>
-                    </li>
+                    </li>                    
                     <li><a href="references.html">References</a></li>
                     <li><a href="Contact.html">Contact Us</a></li>
                     <li><button onclick="window.location.href='donate.html'" class="donateButton">Donate</button></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
+        <script>
+            const toggleButton = document.getElementsByClassName(".toggle-button")[0];
+            const navLinks = document.querySelector(".navlinks")[0];
+            toggleButton.addEventListener('click', () => {
+                navLinks.classList.toggle('active')
+            })
+        </script>
         <!-- Information of each charities -->
         <div class="room" id="first">
             <div class="charity">
