@@ -211,7 +211,6 @@ html, body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 2px solid red;
 }
 .introduction {
   position: relative;

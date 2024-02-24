@@ -15,7 +15,7 @@ html, body {
     overflow-y: auto;
     overflow-x: hidden;
     position: relative;
-    border: 2px solid lightgreen;
+    /* border: 2px solid lightgreen; */
   }
   
   .titleBox {
@@ -46,7 +46,7 @@ html, body {
     background-color: #0D0F08;
     color: white;
     height: 69px;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
   }
   .navText {
     color: white;
@@ -205,50 +205,11 @@ html, body {
     }
   }
 
-.pageBox { 
-    background-color: #0D0F08;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 80px;
-    font-style: normal;
-    font-family: "Yeseva One";
-    font-weight: 400;
-    font-size: 52px;
-    text-align: left;
-    /* border: 2px solid orange; */
-}
-
-.pageBox p {
-    color: white;
-    margin: 10px;
-    padding-left: 20px;
-    /* border: 2px solid orange; */
-}
-
-#mainBox {
-    position: absolute;
-    display: flex;
-    top: 138px;
-    width: 100vw;
-    height: 1150px;
-    /* align-items: center; */
-    justify-content: center;
-    /* border: 2px solid green; */
-}
-
 #map {  
     position: relative;
-    justify-content: center;
     height: 960px;
     width: 540px;
-    border: 2px solid red;
-}
-
-#map img {
-    position: absolute;
-    opacity: 1;
-    border: 2px solid purple;
+    /* border: 2px solid red; */
 }
 
 #central {
@@ -258,7 +219,7 @@ html, body {
     opacity: 1;
     top: 335px;
     left: 100px;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     background-image: url("images/central.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -271,7 +232,7 @@ html, body {
     opacity: 1;
     top: -50px;
     left: 260px;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     background-image: url("images/east.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -284,7 +245,7 @@ html, body {
     opacity: 1;
     top: -470px;
     left: 50px;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     background-image: url("images/north.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -297,7 +258,7 @@ html, body {
     opacity: 1;
     top: -245px;
     left: 140px;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
     background-image: url("images/south.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -354,7 +315,7 @@ html, body {
     font-family: "Noto Serif Georgian";
     width: clamp(100px, 23vw, 500px);
     height: auto;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
 }
 
 #southregion {
@@ -448,7 +409,7 @@ html, body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 100vw;
   }
   .introduction {
@@ -457,7 +418,7 @@ html, body {
     width: 80vw;
     height: fit-content;
     text-align: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
   .introductiontext {
     padding: 40px;
