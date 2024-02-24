@@ -73,6 +73,9 @@ html, body {
   font-size: 16px;
   white-space: nowrap;
 }
+.navlinks .donate {
+  display: none;
+}
 .donateButton {
   background-color: #CFD9CE;
   color: black;
@@ -177,6 +180,16 @@ html, body {
       align-items: center;
       width: 100%; 
   }
+  .navlinks .donate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navlinks li:hover .donate {
+    padding: .8rem 1rem;
+  }
+  
   .navlinks li:hover {
       width: 100%;
   }
