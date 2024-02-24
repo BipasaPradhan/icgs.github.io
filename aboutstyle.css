@@ -238,13 +238,13 @@ html, body {
     }
   }
   .missionstatement {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
-    top: 360px;
+    top: 280px;
     width: 100%;
     left: 50%; 
     transform: translateX(-77.5%);
@@ -308,7 +308,7 @@ html, body {
     left: 605px;
   }
   .whatweoffer {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -316,7 +316,7 @@ html, body {
     justify-content: center;
     width: 100%;
     left: 258px; 
-    top: 550px;
+    top: 35px;
   }
 .charityguide, .treeguide, .photographyshowcase {
     margin-left: 20px;
@@ -365,7 +365,7 @@ html, body {
         margin-right: auto;
         left: 0;
         transform: none;
-        top: 900px;
+        top: 390px;
     }
     .charityguide, .treeguide, .photographyshowcase {
         margin-top: 40px;
