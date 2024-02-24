@@ -5,26 +5,6 @@ html, body {
     overflow-x: hidden;
 }
 
-.titleBox {
-    background-color:  #747F71;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 28px;
-    font-style: normal;
-    font-family: "Josefin Sans";
-    font-weight: 400;
-    font-size: 15px;
-    text-align: center;
-    /* border: 2px solid orange; */
-}
-
-.titleBox p {
-    color: white;
-    margin: 0;
-  }
-
-
 .pageBox { 
     background-color: #0D0F08;
     display: flex;
