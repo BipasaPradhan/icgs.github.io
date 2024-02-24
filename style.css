@@ -355,7 +355,7 @@ html, body {
     font-family: "Noto Serif Georgian";
     width: clamp(100px, 23vw, 500px);
     height: auto;
-    top: 20%;
+    top: 23%;
     right: clamp(calc(50vw + 230px), calc(60vw), calc(50vw + 300px - 5vw));
     background-color: #4e523c;
 }
@@ -419,6 +419,7 @@ html, body {
     height: fit-content;
     text-align: center;
     /* border: 2px solid red; */
+    margin-top:70px;
   }
   .introductiontext {
     padding: 40px;
