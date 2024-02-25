@@ -104,8 +104,9 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 100%;
+  width: 89%;
   margin-top: 115px;
+  /* border: 2px solid yellow; */
 }
 .charityguide, .treeguide, .photographyshowcase {
   margin-left: 10px;
@@ -169,6 +170,9 @@ background-color: #7a8d7a;
   }
   .charityguide, .treeguide, .photographyshowcase {
       margin-bottom: 50px;
+  }
+  .mainoffer{ 
+    width: 100%;
   }
 }
 @media only screen and (min-width: 1300px) {
