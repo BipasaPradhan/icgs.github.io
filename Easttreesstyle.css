@@ -33,19 +33,19 @@
 .introduction strong {
   color: #202d09;
 }
-.ButeaMonosperma, .MammeaSiamensis, .TectonaGrandis {
+.TamarindusIndica, .Bambusoideae, .HeveaBrasiliensis {
   position: relative;
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-.photoB {
+.photoT {
   align-items: center;
   justify-content: center;
   text-align: center;
   width: 700px;
   height: auto;
-  background-image: url(images/ButeaMonosperma.jpg);
+  background-image: url(images/Tamarindus_indica_pods2.jpeg);
   background-position: center;
   background-size: cover;
   margin-left: 55px;
@@ -53,7 +53,19 @@
   margin-bottom: 45px;
   border: 4px solid #ECEDE2;
 }
-.informationB {
+.photoB {
+  background-image: url(images/Bamboo_Forest.jpg);
+  background-position: center;
+  background-size: cover;
+  border: 4px solid #ECEDE2
+}
+.photoH {
+  background-image: url(images/Rubber.jpg);
+  background-position: center;
+  background-size: cover;
+  border: 4px solid #ECEDE2
+}
+.informationT {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -64,18 +76,17 @@
   padding: 0 55px; 
   /** border: 2px solid orange; **/
 }
-.creditsB {
+.creditsT, .creditsB, .creditsH {
   font-family: "Montserrat";
   font-size: 12px;
   color: white;
   bottom: 0;
   top: 0;
 }
-.creditsB a {
+.creditsT a, .creditsB a, .creditsH a {
   color: white;
-  text-decoration: none;
 }
-.nameB, .nameM, .nameT{
+.nameT, .nameB, .nameH{
   font-family: "Bugaki";
   background-color: #ECEDE2;
   width: fit-content;
@@ -84,7 +95,7 @@
   font-size: 25px;
   margin: 0 auto;
 }
-.maininfoB, .maininfoM, .maininfoT {
+.maininfoT, .maininfoB, .maininfoH {
   margin-top: 30px;
   text-align: start;
   font-family: "Montserrat";
@@ -93,17 +104,17 @@
   color: white;
   /** border: 2px solid red; **/
 }
-.ThainameB, .ThainameM, .ThainameT {
+.ThainameT, .ThainameB, .ThainameH {
   line-height: 2.5;
 }
-.ecologicalnicheB, .ecologicalnicheM, .ecologicalnicheT {
+.ecologicalnicheT, .ecologicalnicheB, .ecologicalnicheH {
   line-height: 1.5;
 }
-.maininfoB strong, .maininfoM strong, .maininfoT strong {
+.maininfoT strong, .maininfoB strong, .maininfoH strong {
   font-size: 19px;
 }
 
-.photoM, .photoT {
+.photoB, .photoH {
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -114,7 +125,7 @@
   margin-top: 45px;
   margin-bottom: 45px;
 }
-.informationM, .informationT {
+.informationB, .informationH {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -124,6 +135,21 @@
   margin-bottom: 45px;
   padding: 0 55px; 
   /** border: 2px solid orange; **/
+}
+.arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  color: white;
+  font-size: 30px;
+  font-family: "Noto Serif Georgian";
+  width: 95%; 
+  margin: auto; 
+  margin-bottom: 15px;
+}
+.arrows a {
+  text-decoration: none;
+  color: white;
 }
 
 
@@ -152,20 +178,20 @@
   .introduction strong {
     color: #202d09;
   }
-  .ButeaMonosperma, .MammeaSiamensis, .TectonaGrandis {
+  .TamarindusIndica, .Bambusoideae, .HeveaBrasiliensis {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .photoB, .photoM, .photoT {
+  .photoT, .photoB, .photoH {
     margin-left: auto;
     margin-right: auto;
     width: 70vw;
     height: 330px;
     background-color: white;
   }
-  .informationB, .informationM {
+  .informationT, .informationB {
     width: 70%;
     margin: auto;
     margin-top: 10px;
@@ -174,11 +200,11 @@
     align-items: center;
     justify-content: center;
   }
-  .maininfoB, .maininfoM, .maininfoT {
+  .maininfoT, .maininfoB, .maininfoH {
     text-align: center;
   }
 
-  .informationT {
+  .informationH {
     width: 70%;
     margin: auto;
     margin-top: 10px;
@@ -190,7 +216,7 @@
   }
 }
 @media only screen and (min-width: 1300px) {
-  .photoB, .photoM, .photoT {
+  .photoT, .photoB, .photoH {
     width: 800px;
   }
 }
