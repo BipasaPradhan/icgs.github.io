@@ -82,7 +82,7 @@
   justify-content: center;
   text-align: center;
   width: 50%;
-  /* border: 2px solid red; */
+  /*border: 2px solid red;*/ 
 }
 .offersheader {
   position: relative;
@@ -181,9 +181,5 @@ background-color: #7a8d7a;
   }
   .introduction .secondline {
       font-size: 21px;
-  }
-  .charityguide, .treeguide, .photographyshowcase {
-      margin-left: 30px;
-      margin-right: 30px;
   }
 }
