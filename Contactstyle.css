@@ -32,11 +32,11 @@
   justify-content: center;
   text-align: center;
   width: fit-content;
-  margin-top: 25vh;
+  margin-top: 30vh;
 }
 .contactB, .contactPe {
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .nameB, .namePa, .namePe {
   position: absolute; 

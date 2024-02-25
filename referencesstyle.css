@@ -6,3 +6,79 @@
   overflow-x: hidden;
   position: relative;
 }
+.mainbody {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.introduction {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  background-color:#E0E1CF;
+  color: black;
+}
+.introduction p {
+  padding: 50px 70px;
+  font-family: "Montserrat";
+  line-height: 1.65;
+  font-size: 21px;
+}
+.region {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+.header {
+  position: relative;
+  background-color: #232917;
+  width: fit-content;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  font-family: "Alice";
+  font-size: 30px;
+  align-items: center;
+  z-index: 2;
+  top: 31px;
+  margin-top: 40px;
+}
+#headernorth {
+  margin-top: 80px;
+}
+.reference {
+  background-color: #ECEDE2;
+  width: 75%;
+  text-align: center;
+  padding: 50px;
+  margin: 0 auto;
+  line-height: 2.5;
+  font-family: "Montserrat";
+  z-index: 1;
+  font-size: 17px;
+  border: 4px solid #232917;
+}
+
+.reference a {
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1300px) {
+  .header {
+    font-size: 35px;
+  }
+  .introduction p {
+    font-size: 26px;
+  }
+  .reference {
+    font-size: 20px;
+  }
+}
