@@ -3,15 +3,36 @@ html, body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
+.mainBox {      /* I have made the main box as the main container of every other boxes */
+  width: 100%;
+  height: 100vh;
+  background-color: #2D351D;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  /* border:2px solid pink; */
+}
+
+.mainbody {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width:100%;
+  /* border:2px solid red; */
+}
+
 .room {
-  position:static;
-  width:100vw;
-  height:80vh;
+  position:relative;
+  width:calc(100vw - 18px);
+  height:fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,54 +40,95 @@ html, body {
 }
 
 #first {
-  background-color:#4f543d;
+  background-color: #78866c;
 }
 #second {
-  background-color:#5c6843;
+  background-color: #aaba9d;
+
 }
 #third {
-  background-color:#657262;
+  background-color:#cfd9ce;
 }
 
 .charity {
-  background-color: #dde6dc;
-  width: 60vw;
+  width: 70vw;
   height: 70%;
   padding:50px;
+  margin:100px;
   display:flex;
   flex-direction: column;
   position: relative;
   align-items: center;
   justify-content: center;
-  border: 2px solid red;
+  /* border: 2px solid red; */
+}
+
+#firstchar {
+  background-color: #cfd9ce;
 }
 
 #name {
-  width:70%;
+  width:80%;
   height:15%;
-  border:2px solid green;
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5%;
+  color: white;
+  font-family: "Bugaki";
+  background-color: #5d653e;
+  width: fit-content;
+  height: fit-content;
+  padding: 15px;
+  font-size: 42px;
+  margin: 0 auto;
 }
 
-#picture {
-  width:15vw;
-  height: 15vw;
-  border: 2px solid orange;
+.picture {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 500px;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
+  border: 4px solid #2d351d;
+}
+
+#onetree {
+  background-image: url(images/onetreeplanted.png);
+}
+
+#ecotree {
+  background-image: url(images/crop-1686480587612.webp);
+}
+
+#bt {
+  background-image: url(images/bt-about.webp);
 }
 
 #slogan {
-  margin-top:5%;
-  width:15vw;
-  height:30vh;
-  border:2px solid pink;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: fit-content;
+  padding:10px;
+  margin-top: 45px;
+  /* border: 2px solid orange; */
+  font-family: "Montserrat";
+  font-size: 23px;
+  line-height: 2.5;
+  color: black;
 }
 
 #eco {
+  background-color: #78866c;
 
 }
 #bigtree {
-  
+  background-color: #aaba9d;
 }
