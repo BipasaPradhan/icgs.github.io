@@ -1,13 +1,3 @@
-html, body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
 .mainBox {      /* I have made the main box as the main container of every other boxes */
   width: 100%;
   height: 100vh;
@@ -25,14 +15,14 @@ html, body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width:100%;
+  width: 100%;
   /* border:2px solid red; */
 }
 
 .room {
-  position:relative;
-  width:calc(100vw - 18px);
-  height:fit-content;
+  position: relative;
+  width: 100%;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,7 +30,7 @@ html, body {
 }
 
 #first {
-  background-color: #78866c;
+  background-color: #565f4d;
 }
 #second {
   background-color: #aaba9d;
@@ -51,10 +41,10 @@ html, body {
 }
 
 .charity {
-  width: 70vw;
-  height: 70%;
-  padding:50px;
-  margin:100px;
+  width: 80vw;
+  height: fit-content;
+  padding: 50px;
+  margin: 100px;
   display:flex;
   flex-direction: column;
   position: relative;
@@ -68,8 +58,8 @@ html, body {
 }
 
 #name {
-  width:80%;
-  height:15%;
+  width: 80%;
+  height: fit-content;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -79,7 +69,7 @@ html, body {
   width: fit-content;
   height: fit-content;
   padding: 15px;
-  font-size: 42px;
+  font-size: 32px;
   margin: 0 auto;
 }
 
@@ -87,8 +77,8 @@ html, body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   background-position: center;
   background-size: cover;
   margin-top: 50px;
@@ -120,15 +110,40 @@ html, body {
   margin-top: 45px;
   /* border: 2px solid orange; */
   font-family: "Montserrat";
-  font-size: 23px;
+  font-size: 20px;
   line-height: 2.5;
   color: black;
 }
 
 #eco {
-  background-color: #78866c;
+  background-color: #6e7a64;
 
 }
 #bigtree {
   background-color: #aaba9d;
+}
+
+@media only screen and (min-width:1300px) {
+  #name {
+    font-size: 42px;
+  }
+  .picture {
+    width: 500px;
+    height: 500px;
+  }
+  #slogan {
+    font-size: 23px;
+  }
+}
+@media only screen and (max-width:1000px) {
+  #name {
+    font-size: 22px;
+  }
+  .picture {
+    width: 300px;
+    height: 300px;
+  }
+  #slogan {
+    font-size: 17px;
+  }
 }
