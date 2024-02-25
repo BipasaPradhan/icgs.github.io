@@ -130,10 +130,26 @@
   height: fit-content;
   margin-top: 45px;
   margin-bottom: 45px;
-  padding: 0 55px; 
-  /** border: 2px solid orange; **/
+  padding: 0 55px;
 }
-
+.photoT, .informationT {
+  margin-bottom: 30px;
+}
+.arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  color: white;
+  font-size: 30px;
+  font-family: "Noto Serif Georgian";
+  width: 95%; 
+  margin: auto; 
+  margin-bottom: 15px;
+}
+.arrows a {
+  text-decoration: none;
+  color: white;
+}
 
 @media only screen and (max-width: 1000px) {
   .mainbody {
