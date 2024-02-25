@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="navbar.css">
-    <link rel="stylesheet" type="text/css" href="oldstyle.css">
+    <link rel="stylesheet" type="text/css" href="homestyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/476dc17da0.js" crossorigin="anonymous"></script>
@@ -25,7 +25,7 @@
             <p>Tales of Siam: Stories From the Heart of the Forest</p>
         </div>
         <nav class="navBar">
-            <div class="navText">About</div>
+            <div class="navText">Tales of Siam</div>
             <a href="#" class="toggle-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -33,7 +33,7 @@
             </a>
             <div class="navlinks">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Homepage.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li class="TreeDropdown">  
                         <a href="treeshome.html">Trees <span class="icon">&#9662;</span></a>
@@ -60,50 +60,17 @@
                 navLinks.classList.toggle('active')
             })
         </script>
-        <div class="mainbody"> <!--main div for the body -->
-            <div class="introduction"> <!--intro part -->
-                <p>
-                    <span class="firstline">&#9884 <strong>About Us</strong> &#9884</span><br>
-                    <span class="secondline">Greetings from the Land of Smiles! We are three university students passionate about spreading awareness and wanting to educate everyone about the green space all around us! Our interest in trees led us to create this website to enthuse and educate all of you!</span>
-                </p>
-            </div>
-            <div class="contents"> <!--main div for 1st tree -->
-                <div class="mission"> 
-                    <div class="missionheader">
-                        &#9884 <strong>Mission</strong> &#9884
-                    </div>
-                    <div class="missionstatement">
-                        Discover and explore Thailand's diverse tree collection from different regions! Our website is passionate about the enchanting world of trees across the various regions of Thailand. Whether you're a nature lover, a student, or simply someone who appreciates the beauty of Trees, our website is your gateway to the beautiful trees in the Land of Smiles with just one simple click!
-                    </div>
+                <div class="mainText">
+                    <div class="firstline">Discover Thailand's</div>
+                    <div class="secondline">Natural Palette</div>
                 </div>
-                <div class="offers"> <!--div for tree info -->
-                    <div class="offersheader"> <!--scientific name -->
-                        &#9884 <strong>What We Offer</strong> &#9884
-                    </div>
-                    <div class="mainoffer"> <!--actual info -->
-                        <div class="charityguide" onclick="window.location.href='donate.html';" style="cursor: pointer;">
-                            <div class="headercharityguide">
-                                Charity & Donation Guides <br>
-                                <i class="fas fa-donate"></i>
-                            </div>
-                        </div>
-                        <div class="treeguide" onclick="window.location.href='treeshome.html';" style="cursor: pointer;">
-                            <div class="headertreeguide">
-                                Regional Tree Guides <br>
-                                <i class="fas fa-tree"></i>
-                            </div>
-                        </div>
-                        <div class="photographyshowcase" onclick="window.location.href='references.html';" style="cursor: pointer;">
-                            <div class="headerphotographyshowcase">
-                                Educational Resources <br>
-                                <i class="fas fa-camera"></i>
-                            </div>
-                        </div> 
-                        
-                    </div>
+                <button class="beginButton" onclick="location.href='about.html';">Begin</button>
+                <div class="welcomeMessage">
+                    <p>Welcome to Tales of Siam, our tree haven! Explore the diverse trees across multiple regions and take action in the <strong class="donate"><a href="donate.html">DONATE</a></strong>
+                        section to support local charities. Join us on this journey of appreciation and care for the beautiful gift of nature - our trees. <strong class="begin"><a href="about.html">CLICK BEGIN</a></strong>!</p>
                 </div>
-            </div>
+                <p class="credits">(Image by <a href="https://www.freepik.com/free-photo/bright-sunset-illuminates-ancient-forest-trail-generated-by-ai_40970792.htm#query=tree%20wallpaper&position=7&from_view=keyword&track=ais&uuid=39fcfbd0-b7dd-4ccd-8f59-7d663a3b8c26">vecstock</a> on Freepik)</p>
+        
     </div>
 </body>
 </html>
-
